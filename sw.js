@@ -1,11 +1,12 @@
-// 一餃匠心 Service Worker：基本離線支援
+// 一煎鍾情 Service Worker：基本離線支援
 // 修改快取內容時，請更換 VERSION，舊快取會在啟用時自動清除。
-const VERSION = 'yijiao-v4';
+const VERSION = 'yijiao-v5';
 const CORE = [
   './',
   './index.html',
   './manifest.webmanifest',
-  './assets/hero-poster.png',
+  './assets/story-night.jpg',
+  './assets/reserve-gallery.jpg',
   './icons/icon-192.png',
   './icons/icon-512.png',
   './icons/icon-maskable-512.png',
@@ -24,16 +25,16 @@ const CORE = [
   './assets/menu/soymilk.jpg'
 ];
 // 外部資源（套件、圖片）：先用快取、背景更新
-const EXTERNAL_HOSTS = ['cdn.tailwindcss.com', 'unpkg.com', 'images.unsplash.com'];
+const EXTERNAL_HOSTS = ['fonts.googleapis.com', 'fonts.gstatic.com'];
 const EXTERNAL_MAX = 60;
-const PRECACHE_EXTERNAL = ['https://cdn.tailwindcss.com', 'https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js'];
+const PRECACHE_EXTERNAL = ['https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(VERSION).then((cache) =>
       Promise.allSettled([
         ...CORE.map((url) => cache.add(url)),
-        // 排版與圖示套件（跨網域，用 no-cors 先存起來；失敗不影響安裝）
+        // 網頁字型樣式（跨網域，用 no-cors 先存起來；字型檔本身會在第一次連網瀏覽時自動存入；失敗不影響安裝）
         ...PRECACHE_EXTERNAL.map((url) => fetch(new Request(url, { mode: 'no-cors' })).then((res) => cache.put(url, res)))
       ])
     ).then(() => self.skipWaiting())

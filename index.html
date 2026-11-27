@@ -1,160 +1,356 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>一餃匠心｜每日現煎的溫度</title><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#f8f4eb"><link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png"><link rel="icon" type="image/png" sizes="48x48" href="icons/favicon-48.png"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="一餃匠心"><meta name="apple-mobile-web-app-status-bar-style" content="default"><script src="https://cdn.tailwindcss.com"></script><script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script><style>
-:root{--cream:#f8f4eb;--ink:#392a20;--orange:#b94d24}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--cream);color:var(--ink);font-family:system-ui,'Noto Sans TC',sans-serif}h1,h2,h3{font-family:Georgia,'Noto Serif TC',serif}button,a,input,select{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #b94d24;outline-offset:3px}.wrap{width:min(1200px,92%);margin:auto}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:8px;background:var(--orange);color:white;font-weight:700;border:0}.btn:hover{background:#913a1b}.outline{background:transparent;border:1px solid currentColor;color:inherit}.outline:hover{background:#ffffff22}.eyebrow{font-size:12px;letter-spacing:.23em;font-weight:700;color:var(--orange)}.section{padding:76px 0}.heading{font-size:clamp(28px,4vw,44px);margin:8px 0 22px;font-weight:700}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:20px}.tile{background:white;border:1px solid #e9dfd0;border-radius:14px;overflow:hidden}.photo{width:100%;height:210px;object-fit:cover;background:#dfcbb3}.tab{padding:10px 17px;border:1px solid #d7c5b2;border-radius:100px;white-space:nowrap}.tab.active{background:var(--ink);color:white}.navlinks{display:flex;gap:20px;font-size:14px}.navlinks a:hover{color:var(--orange)}.hero{min-height:620px;display:flex;align-items:center;background:linear-gradient(135deg,#2b1b10,#4a3223);color:white;padding:48px 0 170px;position:relative;overflow:hidden}.hero .wrap{position:relative;z-index:1}.crowd{position:absolute;left:0;right:0;bottom:0;width:100%;height:150px;pointer-events:none;z-index:0;-webkit-mask-image:linear-gradient(to bottom,transparent,#000 40%);mask-image:linear-gradient(to bottom,transparent,#000 40%)}.heroGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}.heroPoster{justify-self:center;width:min(100%,400px);height:auto;border-radius:14px;box-shadow:0 12px 32px rgba(0,0,0,.45)}.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.overlay{position:fixed;inset:0;background:#20160e88;z-index:70;display:flex;justify-content:flex-end}.overlay[hidden], [hidden]{display:none!important}.drawer{width:min(440px,100%);height:100%;background:var(--cream);padding:24px;display:flex;flex-direction:column;overflow:auto}.modal{margin:auto;width:min(480px,94%);max-height:90vh;overflow:auto;background:var(--cream);padding:26px;border-radius:15px}.field{width:100%;padding:12px;border:1px solid #cbbba7;border-radius:7px;background:white;margin:6px 0 14px}.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#392a20;color:white;padding:14px 20px;border-radius:8px;z-index:100;max-width:90%;width:max-content}.mobile{display:none}details{border-bottom:1px solid #d9cbb9;padding:17px 0}summary{cursor:pointer;font-weight:700}details p{margin-top:12px;color:#675647} .map{min-height:250px;background:repeating-linear-gradient(35deg,#e1e5d9 0 35px,#f7f5e9 36px 45px,#e1e5d9 46px 80px);display:grid;place-items:center;border-radius:12px;text-align:center}.small{font-size:13px;color:#796b5e}@media(max-width:1000px){.navlinks{display:none}.mobile{display:inline-flex}.navlinks.open{display:flex;position:absolute;top:100%;left:0;right:0;background:#f8f4eb;padding:20px;flex-direction:column;box-shadow:0 8px 12px #0002}}@media(max-width:900px){.heroGrid{grid-template-columns:1fr}.heroPoster{width:min(100%,340px)}}@media(max-width:767px){.section{padding:48px 0}.split{grid-template-columns:1fr;gap:24px}.hero{min-height:530px;padding-bottom:130px}.crowd{height:110px}.desktopcta{display:none}.photo{height:190px}}@media(min-width:901px){:root{--hh:100px}.hero{--ch:clamp(110px,19vh,170px);min-height:max(480px,calc(100svh - var(--hh)));padding:28px 0 var(--ch)}.crowd{height:var(--ch)}.hero.is3d{--ch:clamp(170px,27vh,270px)}#crowd3d{-webkit-mask-image:linear-gradient(to bottom,transparent,#000 14%);mask-image:linear-gradient(to bottom,transparent,#000 14%)}.heroPoster{width:auto;height:auto;max-width:min(100%,400px);max-height:calc(100svh - var(--hh) - var(--ch) - 56px);min-height:0}}.fab{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:50;display:inline-flex;align-items:center;gap:8px;padding:14px 20px;border-radius:999px;background:var(--orange);color:#fff;font-weight:700;box-shadow:0 6px 16px rgba(35,22,13,.35);transition:background .2s,transform .2s}.fab:hover{background:#913a1b;transform:translateY(-2px)}.fab svg{width:22px;height:22px}body:has(.overlay:not([hidden])) .fab{display:none}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fab{transition:none}.fab:hover{transform:none}}
-</style></head><body>
-<!-- Navigation -->
-<header class="sticky top-0 z-40 bg-[#f8f4eb] border-b border-[#e6d9c7]"><div class="wrap flex items-center justify-between gap-3 py-4"><a href="#home" class="flex items-center gap-2 font-bold text-xl"><span class="bg-[#b94d24] text-white rounded-full p-2" aria-hidden="true">餃</span>一餃匠心</a><nav id="nav" class="navlinks" aria-label="主要導覽"><a href="#story">品牌故事</a><a href="#menu">熱門餐點</a><a href="#menu">線上點餐</a><a href="#gift">冷凍禮盒</a><a href="#stores">門市據點</a><a href="#contact">聯絡我們</a></nav><div class="flex items-center gap-3"><button onclick="openCart()" aria-label="開啟購物車" class="relative p-2"><i data-lucide="shopping-bag"></i><span id="badge" class="absolute -top-1 -right-1 bg-[#b94d24] text-white text-xs rounded-full px-1.5">0</span></button><a class="btn desktopcta" href="#menu">立即點餐</a><button class="mobile p-2" id="navToggle" aria-label="切換導覽" aria-expanded="false"><i data-lucide="menu"></i></button></div></div></header>
-<main id="home"><section class="hero"><canvas id="crowd" class="crowd" aria-hidden="true"></canvas><canvas id="crowd3d" class="crowd" aria-hidden="true" hidden></canvas><div class="wrap heroGrid"><div><p class="tracking-[.25em] text-orange-200 text-sm mb-5">HANDCRAFTED · FRESHLY SEARED</p><h1 class="text-5xl md:text-7xl font-bold leading-tight">一口酥香，<br>一份匠心。</h1><p class="mt-6 mb-8 text-lg max-w-md text-stone-100">金黃酥脆，傳承手藝的極致美味。把平凡的一餐，煎成值得回味的日常。</p><div class="flex flex-wrap gap-3"><a href="#menu" class="btn">線上點餐</a><a href="#stores" class="btn outline">探索門市</a></div><p class="mt-8 text-xs text-stone-300">品牌概念展示網站・非正式營業資訊</p></div><img class="heroPoster" src="assets/hero-poster.png" alt="鍋貼品牌社群行銷菜單海報，展示煎得金黃酥脆的鍋貼" width="640" height="800"></div></section>
-<section id="story" class="section"><div class="wrap split"><img class="rounded-2xl w-full h-80 object-cover" src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1000&q=85" alt="溫暖的餐廳空間示意"><div><p class="eyebrow">OUR STORY</p><h2 class="heading">好味道，從不將就。</h2><p class="leading-loose">從在地豬肉、每日現包，到恰到好處的金黃煎脆比例，我們用心對待每一顆鍋貼。簡單的食材，也能成就不簡單的滋味。</p><div class="grid grid-cols-3 gap-3 mt-8 border-t border-stone-300 pt-6"><div><strong class="text-2xl md:text-3xl text-[#b94d24]">10,000+</strong><p class="small">每日鍋貼</p></div><div><strong class="text-2xl md:text-3xl text-[#b94d24]">100%</strong><p class="small">現點現煎</p></div><div><strong class="text-2xl md:text-3xl text-[#b94d24]">30 年</strong><p class="small">手藝傳承</p></div></div><p class="small mt-3">以上為虛構品牌示範數據與理念。</p></div></div></section>
-<section id="menu" class="section bg-[#efe6d8]"><div class="wrap"><p class="eyebrow">THE MENU</p><h2 class="heading">今天，想吃點什麼？</h2><div id="tabs" class="flex flex-wrap gap-2 mb-7" role="group" aria-label="菜單分類"></div><div id="products" class="cards"></div></div></section>
-<section id="gift" class="section"><div class="wrap split"><div><p class="eyebrow">TAKE HOME THE GOODNESS</p><h2 class="heading">把匠心帶回家。</h2><p class="leading-loose mb-5">招牌招財鍋貼禮盒・50 入。以急速冷凍保留鮮味的概念，讓家中餐桌也能享受金黃酥香。建議依實際包裝烹調說明操作。</p><p class="text-2xl font-bold mb-5">NT$ 399</p><button class="btn" onclick="add('g1')">加入購物車</button><p class="small mt-3">冷凍技術、8 分鐘烹調為示範產品規格，未經實測。</p></div><img class="w-full h-80 object-cover rounded-2xl" src="assets/menu/gift-box.jpg" width="1000" height="750" alt="冷凍鍋貼禮盒餐點示意"></div></section>
-<section id="stores" class="section bg-white"><div class="wrap"><p class="eyebrow">FIND US</p><h2 class="heading">與美味相遇。</h2><div id="storeTabs" class="flex gap-3 flex-wrap mb-6"></div><div class="split"><div id="storeInfo"></div><div class="map"><div class="bg-white p-5 rounded-xl shadow"><i data-lucide="map-pin" class="mx-auto text-[#b94d24]"></i><strong id="mapName"></strong><p class="small">地圖介面示意・非實際定位</p><a id="mapLink" target="_blank" rel="noopener" class="underline text-sm" href="https://maps.google.com">探索周邊地圖</a></div></div></div></div></section>
-<section class="section"><div class="wrap max-w-3xl"><p class="eyebrow">FAQ</p><h2 class="heading">常見問題</h2><details><summary>如何線上點餐？</summary><p id="faqOrder">選擇餐點、加入購物車，再選擇取餐方式並填寫聯絡資訊。本網站僅模擬訂單，不會收款或傳送資料。</p></details><details><summary>冷凍鍋貼如何保存？</summary><p>通常應冷凍保存於 −18°C 以下，實際保存期限與料理方式請依商品包裝標示。</p></details><details><summary>可以外送或宅配嗎？</summary><p>本展示提供宅配流程選項；實際配送範圍、運費及合作平台尚未設定。</p></details></div></section></main>
-<footer id="contact" class="bg-[#392a20] text-[#f8f4eb] py-12"><div class="wrap grid md:grid-cols-2 gap-10"><div><h2 class="text-2xl font-bold mb-4">一餃匠心</h2><p class="text-stone-300">把每一份日常，煎得剛剛好。</p><div class="flex gap-4 mt-5"><a href="https://www.instagram.com/" target="_blank" rel="noopener">IG</a><a href="https://www.facebook.com/" target="_blank" rel="noopener">FB</a><a href="https://line.me/" target="_blank" rel="noopener">LINE</a><button class="underline" onclick="showPrivacy()">隱私權政策</button></div></div><form id="newsletter"><label for="email" class="font-bold">訂閱品牌電子報（示範）</label><div class="flex gap-2 mt-3 flex-wrap"><input id="email" type="email" required placeholder="電子郵件" class="rounded p-3 text-stone-900 flex-1 min-w-0"><button class="btn">訂閱</button></div></form><p class="text-sm text-stone-300 md:col-span-2 border-t border-stone-600 pt-5">© 2026 一餃匠心｜虛構品牌展示・社群連結為平台首頁・照片為示意素材</p></div></footer>
-<!-- Cart and checkout dialogs -->
-<div id="cartOverlay" class="overlay" hidden><aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle"><div class="flex justify-between items-center mb-6"><h2 id="cartTitle" class="text-2xl font-bold">購物車</h2><button onclick="closeOverlay('cartOverlay')" aria-label="關閉購物車">✕</button></div><div id="cartItems" class="flex-1"></div><div class="border-t border-stone-300 pt-4"><div class="flex justify-between mb-2"><span>商品小計</span><strong id="subtotal"></strong></div><div class="flex justify-between text-xl mb-4"><span>總金額</span><strong id="total"></strong></div><p class="small mb-3">示範價格，不含未設定之運費。</p><button id="checkoutBtn" class="btn w-full" onclick="checkout()">前往結帳</button></div></aside></div>
-<div id="checkoutOverlay" class="overlay" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle"><div class="flex justify-between"><h2 id="checkoutTitle" class="text-2xl font-bold">確認訂單</h2><button onclick="closeOverlay('checkoutOverlay')" aria-label="關閉結帳">✕</button></div><form id="orderForm"><p id="orderSummary" class="my-4"></p><label for="method">取餐方式</label><select id="method" class="field"><option>內用</option><option>外帶</option><option>宅配</option></select><label for="customer">姓名（請用測試資料）</label><input id="customer" class="field" required maxlength="30" autocomplete="off"><label for="phone">聯絡電話</label><input id="phone" type="tel" class="field" required pattern="[0-9+() -]{8,18}" autocomplete="off"><div id="addressBox" hidden><label for="address">配送地址</label><input id="address" class="field" maxlength="100" autocomplete="off"></div><input id="hp" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0"><p id="orderNote" class="small mb-4">僅限模擬，請勿填寫真實個資。不會付款或傳送訂單。</p><p id="orderError" class="mb-3 text-sm font-bold text-red-700" role="alert" hidden></p><button id="orderSubmit" class="btn w-full">提交模擬訂單</button></form><div id="success" hidden class="text-center py-10"><p class="text-5xl text-green-700">✓</p><h3 id="successTitle" class="text-2xl font-bold my-4">訂單已建立（模擬）</h3><p id="successText">感謝您的體驗！未產生實際交易。</p><button class="btn mt-5" onclick="closeOverlay('checkoutOverlay')">繼續逛逛</button></div></div></div>
-<div id="privacyOverlay" class="overlay" hidden><div class="modal" role="dialog" aria-modal="true" aria-label="隱私權政策"><h2 class="text-2xl font-bold mb-4">隱私權政策（示範）</h2><p id="privacyText">本頁不儲存或傳送訂單與電子報表單資料，購物車僅存在目前頁面的記憶體。外部 CDN、圖片服務及社群連結可能依各服務政策處理連線資訊。</p><button class="btn mt-5" onclick="closeOverlay('privacyOverlay')">關閉</button></div></div><div id="toast" class="toast" role="status" hidden></div>
-<!-- Floating booking button -->
-<a class="fab" href="https://calendar.app.google/LNf5BRBy9pDfcRtr7" target="_blank" rel="noopener" aria-label="預約（另開新分頁）"><i data-lucide="calendar-days"></i>預約</a>
+<html lang="zh-Hant-TW"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>一煎鍾情｜每日現煎的溫度</title>
+<meta name="description" content="一煎鍾情：夜裡的一盞光，把鍋貼煎成作品。（品牌概念展示網站，非實際營業資訊）">
+<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#04050a">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png"><link rel="icon" type="image/png" sizes="48x48" href="icons/favicon-48.png"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="一煎鍾情"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap">
+<style>
+:root{--bg:#04050a;--bg2:#070a14;--ink:#eef0f6;--mute:#9aa4bd;--dim:#8590a8;--line:#ffffff26;--white:#f4f6fb;--pink:255,150,200;--cyan:120,230,255}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:84px;background:var(--bg)}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',system-ui,sans-serif;font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}[hidden]{display:none!important}
+:focus-visible{outline:2px solid #fff;outline-offset:4px}
+.skip{position:absolute;left:12px;top:-60px;z-index:300;background:#fff;color:#04050a;padding:10px 16px;font-weight:500}.skip:focus{top:12px}
+.eb{font-size:12px;letter-spacing:.5em;color:var(--dim);font-weight:400}
+h1,h2,h3{font-weight:300;letter-spacing:.2em;line-height:1.3}
+.wrap{width:min(1296px,100% - 48px);margin:0 auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--white);color:#04050a;padding:15px 34px;font-size:13px;letter-spacing:.3em;font-weight:500;transition:background .2s,box-shadow .2s}.btn:hover{background:#fff;box-shadow:0 0 30px #ffffff44}.btn:disabled{opacity:.5;cursor:not-allowed}
+.link{display:inline-block;font-size:13px;letter-spacing:.3em;border-bottom:1px solid currentColor;padding-bottom:5px;font-weight:400}
+section{position:relative}
+/* ---------- header ---------- */
+header{position:fixed;z-index:100;left:0;right:0;top:0;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px max(24px,calc((100% - 1296px)/2));background:linear-gradient(#04050af2,#04050a00);font-size:13px;letter-spacing:.28em;transition:background .3s}
+header.solid{background:#04050af0;border-bottom:1px solid #ffffff14}
+.logo{font-weight:500;letter-spacing:.4em;font-size:15px;white-space:nowrap;position:relative;z-index:101}.navcta{display:none}
+nav{display:flex;gap:34px;color:#b9bfce}nav a{padding:6px 0;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}nav a:hover{color:#fff;border-color:#fff}
+.hr{display:flex;align-items:center;gap:20px}.cartbtn{position:relative;padding:6px;display:inline-flex}.cartbtn svg{width:22px;height:22px}.cartbtn b{position:absolute;top:-4px;right:-6px;background:#fff;color:#04050a;font-size:10px;font-weight:500;min-width:17px;height:17px;border-radius:99px;display:grid;place-items:center;padding:0 4px;letter-spacing:0}
+.ordlink{border-bottom:1px solid #fff;padding-bottom:4px;color:#fff;font-weight:400}
+.burger{display:none;padding:8px}.burger svg{width:24px;height:24px}
+/* ---------- hero：輕量版（手機／觸控／減少動態）---------- */
+.lite{position:relative;min-height:100svh;padding:110px 0 70px;overflow:hidden;background:radial-gradient(ellipse at 50% 38%,#161d38,#04050a 70%)}
+.lite:after{content:"";position:absolute;left:-40%;right:-40%;bottom:-30px;height:260px;background:repeating-linear-gradient(90deg,#9db8ff26 0 1px,transparent 1px 70px),repeating-linear-gradient(0deg,#9db8ff1c 0 1px,transparent 1px 30px);transform:perspective(300px) rotateX(58deg);transform-origin:50% 0;-webkit-mask-image:linear-gradient(#000,transparent 90%);mask-image:linear-gradient(#000,transparent 90%);pointer-events:none}
+.lvis{position:relative;height:clamp(300px,64vw,470px)}
+.lg{position:absolute;left:50%;top:0;width:clamp(210px,62vw,420px);margin-left:calc(clamp(210px,62vw,420px)/-2);font-size:clamp(250px,74vw,500px);font-weight:900;line-height:1;text-align:center;color:transparent;background:url(assets/menu/gyoza-pan.jpg) 38% 52%/cover;-webkit-background-clip:text;background-clip:text}
+.lg.dim{opacity:.22}.lg.lit{-webkit-mask-image:radial-gradient(ellipse 60% 55% at 28% 45%,#000 25%,transparent 100%),radial-gradient(ellipse 60% 55% at 72% 55%,#000 25%,transparent 100%);mask-image:radial-gradient(ellipse 60% 55% at 28% 45%,#000 25%,transparent 100%),radial-gradient(ellipse 60% 55% at 72% 55%,#000 25%,transparent 100%)}
+.lg.out{background:none;-webkit-text-stroke:1px #ffffff55}
+.lb{position:absolute;top:34%;width:max(100%,560px);height:170px;mix-blend-mode:screen;filter:blur(2px);pointer-events:none}
+.lb.l{left:-6px;background:linear-gradient(90deg,rgba(var(--pink),.55),transparent 75%);clip-path:polygon(0 46%,100% 0,100% 100%,0 54%);transform-origin:0 50%;transform:rotate(14deg)}
+.lb.r{right:-6px;background:linear-gradient(270deg,rgba(var(--cyan),.5),transparent 75%);clip-path:polygon(100% 46%,0 0,0 100%,100% 54%);transform-origin:100% 50%;transform:rotate(-12deg)}
+@media(prefers-reduced-motion:no-preference){.lb.l{animation:swl 7s ease-in-out infinite}.lb.r{animation:swr 8s ease-in-out infinite}}
+@keyframes swl{0%,100%{transform:rotate(10deg)}50%{transform:rotate(20deg)}}@keyframes swr{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(-18deg)}}
+.ltext{position:relative;z-index:2;margin:28px auto 0;width:min(560px,100% - 48px)}
+.ltext h1{font-size:clamp(40px,11vw,64px);letter-spacing:.2em;color:#fff;text-shadow:0 0 30px #9db8ff55;margin:12px 0 14px}
+.ltext p{font-size:15px;letter-spacing:.14em;line-height:2.1;color:#aab2c7}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:26px;margin-top:26px}
+.note{margin-top:30px;font-size:11px;letter-spacing:.18em;line-height:2;color:var(--dim)}
+.stagewrap,.sticky{display:none}
+/* ---------- hero：展間版（桌機）---------- */
+.s3d .lite{display:none}.s3d .runway{height:420vh;position:relative}
+.s3d .sticky{display:flex;position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;justify-content:center;align-items:flex-start}
+.stage{width:1440px;height:900px;position:relative;transform-origin:50% 0;flex:none;perspective:1400px}
+.room{position:absolute;inset:0;transform-style:preserve-3d;will-change:transform}
+.layer{position:absolute;inset:0;will-change:transform;pointer-events:none}#txt{z-index:12}#txt .btn,#txt .link{pointer-events:auto}
+.wall{height:600px;background:radial-gradient(ellipse at 50% 85%,#161d38,#04050a 74%)}
+.floor{position:absolute;left:0;right:0;top:600px;height:300px;background:linear-gradient(#0d1226,#04050a);overflow:hidden}
+.grid{position:absolute;left:-30%;right:-30%;top:0;bottom:-40px;background:repeating-linear-gradient(90deg,#9db8ff26 0 1px,transparent 1px 110px),repeating-linear-gradient(0deg,#9db8ff1c 0 1px,transparent 1px 36px);transform:perspective(380px) rotateX(58deg);transform-origin:50% 0;-webkit-mask-image:linear-gradient(#000,transparent 92%);mask-image:linear-gradient(#000,transparent 92%)}
+.horizon{position:absolute;left:0;right:0;top:600px;height:1px;background:linear-gradient(90deg,transparent,#cfe0ff99,transparent);z-index:3}
+.glyphbox{position:absolute;left:50%;top:34px;margin-left:-300px;width:600px;height:620px;transform-origin:50% 50%}
+.g{position:absolute;left:0;top:0;width:600px;font-size:620px;font-weight:900;line-height:1;color:transparent;text-align:center}
+.g.dim,.g.lit{background:var(--img,url(assets/menu/gyoza-pan.jpg)) var(--pos,38% 52%)/cover;-webkit-background-clip:text;background-clip:text}.g.dim{opacity:.2}
+.g.lit{-webkit-mask-image:radial-gradient(ellipse 330px 420px at var(--xl,300px) var(--yl,300px),#000 25%,transparent 100%),radial-gradient(ellipse 330px 420px at var(--xr,300px) var(--yr,300px),#000 25%,transparent 100%),radial-gradient(circle 210px at var(--xm,-999px) var(--ym,-999px),#000 18%,transparent 100%);mask-image:radial-gradient(ellipse 330px 420px at var(--xl,300px) var(--yl,300px),#000 25%,transparent 100%),radial-gradient(ellipse 330px 420px at var(--xr,300px) var(--yr,300px),#000 25%,transparent 100%),radial-gradient(circle 210px at var(--xm,-999px) var(--ym,-999px),#000 18%,transparent 100%)}
+.g.out{-webkit-text-stroke:1.3px #ffffff4a}
+.beam{position:absolute;width:1700px;height:300px;margin-top:-150px;transform-origin:0 50%;mix-blend-mode:screen;filter:blur(3px);clip-path:polygon(0 47%,100% 0,100% 100%,0 53%);background:linear-gradient(90deg,rgba(var(--c),.7),rgba(var(--c),0) 70%)}
+.lamp{position:absolute;width:46px;height:20px;margin:-10px 0 0 -6px;background:linear-gradient(#cfd6ea,#6b7288);border-radius:3px 12px 12px 3px;box-shadow:0 0 20px #fff9;transform-origin:6px 50%}
+.lamp:after{content:"";position:absolute;right:-3px;top:2px;width:7px;height:16px;border-radius:50%;background:#fff;box-shadow:0 0 18px 8px #ffffffbb}
+.hit{position:absolute;width:520px;height:340px;margin:-170px 0 0 -260px;border-radius:50%;mix-blend-mode:screen;filter:blur(10px)}
+.pool{position:absolute;width:520px;height:120px;margin:-60px 0 0 -260px;border-radius:50%;mix-blend-mode:screen;filter:blur(10px)}
+.fl{position:absolute;width:460px;height:460px;margin:-230px 0 0 -230px;border-radius:50%;mix-blend-mode:screen;background:radial-gradient(circle,rgba(255,244,222,.26),transparent 66%);pointer-events:none}
+canvas.fx{position:absolute;inset:0;width:1440px;height:900px;pointer-events:none}
+.stext{position:absolute;left:72px;top:170px;z-index:12}.stext h1{font-size:58px;line-height:1.18;color:#fff;text-shadow:0 0 30px #9db8ff55;margin-top:20px}
+.scta{position:absolute;left:72px;top:700px;z-index:12}.sinfo{position:absolute;right:72px;top:700px;width:330px;border-top:1px solid #ffffff44;padding-top:14px;font-size:11px;letter-spacing:.22em;line-height:2.2;color:#9aa4bd;z-index:12}.sinfo b{display:block;color:#fff;font-weight:400;font-size:15px;letter-spacing:.3em}
+.pcap{z-index:8;position:absolute;left:50%;top:640px;transform:translateX(-50%);font-size:11px;letter-spacing:.45em;color:#aeb7cf;white-space:nowrap}.pcap b{color:#fff;font-weight:400;margin:0 .6em}
+.hintx{position:absolute;left:50%;bottom:34px;transform:translateX(-50%);font-size:11px;letter-spacing:.5em;color:#8f9ab4;z-index:30;white-space:nowrap}.hintx i{display:block;width:1px;height:34px;margin:10px auto 0;background:linear-gradient(#fff,transparent);animation:dr 1.8s infinite}@keyframes dr{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.ex{position:absolute;top:322px;width:380px}.ex figure{height:260px;overflow:hidden;background:#000;box-shadow:0 0 0 1px #ffffff26}.ex img{width:100%;height:100%;object-fit:cover}
+.ex .pl{margin-top:16px;border-top:1px solid #ffffff44;padding-top:12px;font-size:12px;letter-spacing:.14em;line-height:2;color:#9aa4bd}.ex .pl b{display:block;color:#fff;font-weight:400;font-size:20px;letter-spacing:.2em}.ex .pl .n{color:#8590a8;letter-spacing:.4em}.ex .pl .p{margin-top:4px;color:#fff;font-size:14px;letter-spacing:.2em}
+.tomenu{position:absolute;left:50%;bottom:34px;transform:translateX(-50%);z-index:40;font-size:12px;letter-spacing:.4em;border-bottom:1px solid #fff;padding-bottom:5px;white-space:nowrap}
+/* ---------- 區塊共用 ---------- */
+.sec{padding:130px 0}.sechd{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:56px}.sechd h2{font-size:clamp(32px,4.4vw,52px);margin-top:18px}
+.sec+.sec{border-top:1px solid var(--line)}
+.tabs{display:flex;flex-wrap:wrap;gap:28px;font-size:14px;letter-spacing:.22em}.tab{color:var(--dim);padding:6px 0;border-bottom:1px solid transparent;transition:color .2s}.tab:hover{color:#fff}.tab.active{color:#fff;border-color:#fff}
+/* 品牌故事 */
+.story{display:grid;grid-template-columns:minmax(0,560px) 1fr;gap:clamp(40px,7vw,100px);align-items:center}
+.sphoto{position:relative;aspect-ratio:4/5;overflow:hidden;border:1px solid var(--line)}.sphoto img{width:100%;height:100%;object-fit:cover}.sphoto figcaption{position:absolute;left:18px;bottom:14px;font-size:10px;letter-spacing:.3em;color:#cdd3e4;text-shadow:0 1px 8px #000}
+.story h2{font-size:clamp(34px,5vw,56px);margin:22px 0 30px}.story .t{font-size:17px;line-height:2.3;letter-spacing:.1em;color:#c3cadb;max-width:520px}
+.stats{display:grid;grid-template-columns:1.3fr 1fr .8fr;gap:24px;margin-top:52px;border-top:1px solid var(--line);padding-top:32px;max-width:560px}.stats b{display:block;font-weight:300;font-size:clamp(28px,4vw,44px);letter-spacing:.06em;line-height:1.3}.stats span{font-size:12px;letter-spacing:.3em;color:var(--mute)}.snote{margin-top:16px;font-size:11px;letter-spacing:.2em;color:var(--dim)}
+/* 菜單 */
+.menu-list{display:flex;flex-wrap:wrap;gap:44px 40px}
+.card{flex:0 0 calc((100% - 80px)/3);position:relative}
+.card figure{position:relative;aspect-ratio:4/3;overflow:hidden;background:#000;box-shadow:0 0 0 1px #ffffff26;transition:box-shadow .3s}
+.card figure:before{content:"";position:absolute;left:-10%;top:-40%;width:90%;height:90%;background:radial-gradient(ellipse,rgba(var(--pink),.35),transparent 70%);opacity:0;transition:opacity .4s;mix-blend-mode:screen;z-index:2;pointer-events:none}
+.card:hover figure{box-shadow:0 0 0 1px #ffffff66,0 0 50px rgba(var(--pink),.18)}.card:hover figure:before{opacity:1}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}.card:hover img{transform:scale(1.04)}
+.tag{position:absolute;left:14px;top:14px;z-index:3;background:#04050acc;border:1px solid #ffffff44;padding:2px 12px;font-size:11px;letter-spacing:.2em;color:#e6eaf5;backdrop-filter:blur(4px)}
+.card .bd{padding-top:18px;border-top:0}.card h3{font-size:22px;letter-spacing:.16em;font-weight:400;margin-top:2px}.card p{font-size:13px;letter-spacing:.1em;color:var(--mute);margin-top:6px}
+.pr{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}.pr b{font-weight:300;font-size:22px;letter-spacing:.1em}
+.add{border:1px solid #ffffff66;padding:9px 20px;font-size:12px;letter-spacing:.3em;transition:background .2s,color .2s}.add:hover{background:#fff;color:#04050a}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}.rv.in{opacity:1;transform:none}
+/* 禮盒 */
+.gift{display:grid;grid-template-columns:1.1fr .9fr;border:1px solid var(--line);background:linear-gradient(160deg,#0b1122,#05070f)}
+.gift figure{min-height:460px;overflow:hidden}.gift figure img{width:100%;height:100%;object-fit:cover}
+.gift .tx{padding:clamp(34px,5vw,70px);display:flex;flex-direction:column;justify-content:center}.gift h2{font-size:clamp(30px,4vw,46px);margin:18px 0 20px}.gift p{font-size:15px;line-height:2.1;letter-spacing:.08em;color:#c3cadb;max-width:440px}
+.gift .price{font-weight:300;font-size:36px;letter-spacing:.1em;margin:24px 0}.gift .small{margin-top:16px;font-size:11px;letter-spacing:.16em;color:var(--dim);line-height:1.9}
+/* 預約 */
+.reserve{padding:0;min-height:520px;display:flex;align-items:center;overflow:hidden;border-top:1px solid var(--line)}
+.reserve:before{content:"";position:absolute;inset:0;background:url(assets/reserve-gallery.jpg) center 72%/cover;filter:brightness(.8)}
+.reserve:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#04050af2 0%,#04050a99 42%,#04050a00 80%)}
+.reserve .wrap{position:relative;z-index:2;padding:90px 0}.reserve h2{font-size:clamp(30px,4.4vw,50px);margin:18px 0 18px}.reserve p{font-size:16px;line-height:2.1;letter-spacing:.1em;color:#d2d8e8;max-width:440px;margin-bottom:30px}
+/* 門市 */
+.stores{background:linear-gradient(#04050a,#070a14)}.st{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px)}
+.sinfo2 h3{font-size:clamp(26px,3vw,36px);margin-bottom:30px}.srow{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:18px 0;border-top:1px solid var(--line);font-size:15px;letter-spacing:.1em;line-height:1.8}.srow>span:first-child{color:var(--mute);font-size:12px;letter-spacing:.35em;padding-top:3px}
+.chips{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px}.chips a{border:1px solid #ffffff44;padding:6px 16px;font-size:13px;letter-spacing:.14em;transition:background .2s,color .2s}.chips a:hover{background:#fff;color:#04050a}
+.map{min-height:440px;position:relative;overflow:hidden;border:1px solid var(--line);background:radial-gradient(ellipse at 50% 50%,#121a33,#05070e 80%)}
+.map:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(35deg,#ffffff0b 0 1px,transparent 1px 60px),repeating-linear-gradient(-55deg,#ffffff08 0 1px,transparent 1px 90px)}
+.pin{position:absolute;left:50%;top:46%;width:16px;height:16px;margin:-8px;border-radius:50%;background:#fff;box-shadow:0 0 0 10px #ffffff18,0 0 0 26px #ffffff0d,0 0 50px 14px rgba(var(--pink),.5)}
+.map .lb2{position:absolute;left:50%;top:46%;transform:translate(-50%,36px);text-align:center;font-size:12px;letter-spacing:.3em;line-height:2.2;color:#c3cadb;width:90%}.map .lb2 b{display:block;color:#fff;font-weight:400;font-size:16px;letter-spacing:.35em}
+.map .ft{position:absolute;left:22px;bottom:18px;font-size:11px;letter-spacing:.24em;color:var(--dim)}.map a{position:absolute;right:22px;bottom:16px;font-size:12px;letter-spacing:.3em;border-bottom:1px solid #fff;padding-bottom:3px}
+/* FAQ */
+.faq{display:grid;grid-template-columns:minmax(0,380px) 1fr;gap:clamp(30px,7vw,100px)}.faq h2{font-size:clamp(30px,4vw,46px);margin-top:20px}
+details{border-top:1px solid var(--line);padding:28px 0}details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;display:flex;justify-content:space-between;gap:20px;cursor:pointer;font-size:19px;letter-spacing:.14em;font-weight:400}summary::-webkit-details-marker{display:none}summary:after{content:"+";color:var(--mute);font-size:22px;line-height:1}details[open] summary:after{content:"−"}
+details p{margin-top:18px;font-size:15px;line-height:2.1;letter-spacing:.08em;color:#aab2c7;max-width:640px}
+/* footer */
+footer{border-top:1px solid var(--line);padding:90px 0 100px;background:linear-gradient(#04050a,#02030a)}
+.ft1{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:clamp(30px,6vw,80px)}.flogo{font-weight:300;font-size:clamp(44px,6vw,60px);letter-spacing:.3em;line-height:1.2}.ft1 p.tg{margin-top:22px;font-size:14px;letter-spacing:.14em;color:var(--mute)}
+.ft1 .fh{font-weight:400;font-size:11px;letter-spacing:.45em;color:var(--mute);margin-bottom:22px;line-height:1.7}.lk{display:flex;flex-direction:column;align-items:flex-start;gap:14px;font-size:15px;letter-spacing:.14em}.lk a:hover,.lk button:hover{color:#fff;text-decoration:underline}
+.nl{display:flex;border-bottom:1px solid #ffffff55}.nl input{flex:1;min-width:0;background:transparent;border:0;color:#fff;padding:12px 0;font:inherit;font-size:14px;letter-spacing:.1em}.nl input::placeholder{color:#8590a8}.nl button{font-size:12px;letter-spacing:.3em;padding:12px 0 12px 20px;font-weight:400}
+.ft1 .mini{font-size:12px;margin-top:18px;letter-spacing:.14em;color:var(--dim)}
+.ft2{margin-top:80px;padding-top:26px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:11px;letter-spacing:.2em;color:var(--dim);line-height:2}
+/* 預約按鈕 */
+.fab{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:90;display:inline-flex;align-items:center;gap:8px;border:1px solid #fff;background:#04050ad9;backdrop-filter:blur(6px);padding:12px 20px;font-size:13px;letter-spacing:.3em;color:#fff;box-shadow:0 0 26px rgba(255,255,255,.16);transition:background .2s,color .2s}.fab svg{width:18px;height:18px}.fab:hover{background:#fff;color:#04050a}
+body:has(.overlay:not([hidden])) .fab,body.navopen .fab{display:none}body.navopen{overflow:hidden}
+/* 購物車、結帳、對話框 */
+.overlay{position:fixed;inset:0;background:#02030acc;backdrop-filter:blur(4px);z-index:200;display:flex;justify-content:flex-end}
+.drawer{width:min(430px,100%);height:100%;background:var(--bg2);border-left:1px solid #ffffff2e;padding:32px 30px;display:flex;flex-direction:column;overflow:auto;box-shadow:-30px 0 80px #000a}
+.hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}.hdr h2{font-size:26px;letter-spacing:.3em}.xbtn{font-size:22px;color:var(--mute);padding:6px 10px}.xbtn:hover{color:#fff}
+.it{display:grid;grid-template-columns:84px 1fr;gap:16px;padding:20px 0;border-top:1px solid #ffffff22}.it img{width:84px;height:84px;object-fit:cover}.it .top{display:flex;justify-content:space-between;gap:10px}.it b{font-weight:400;font-size:17px;letter-spacing:.14em}.it .del{font-size:11px;letter-spacing:.3em;color:var(--dim);border-bottom:1px solid var(--dim);align-self:flex-start;white-space:nowrap}
+.qr{display:flex;justify-content:space-between;align-items:center;margin-top:14px;font-size:15px;letter-spacing:.1em}.qty{display:flex;border:1px solid #ffffff33}.qty button{width:34px;padding:6px 0}.qty span{width:40px;text-align:center;padding:6px 0;border-left:1px solid #ffffff33;border-right:1px solid #ffffff33}
+.empty{font-size:14px;letter-spacing:.14em;color:var(--mute);padding:20px 0}
+.sum{margin-top:auto;border-top:1px solid #ffffff33;padding-top:22px}.sum .l{display:flex;justify-content:space-between;font-size:14px;letter-spacing:.14em;color:#aab2c7;margin-bottom:12px}.sum .t{display:flex;justify-content:space-between;align-items:baseline;font-size:15px;letter-spacing:.2em;margin:18px 0 6px}.sum .t strong{font-weight:300;font-size:34px;letter-spacing:.08em}.sum .n{font-size:11px;letter-spacing:.2em;color:var(--dim);margin-bottom:20px}
+.modal{margin:auto;width:min(470px,94%);max-height:92vh;overflow:auto;background:var(--bg2);border:1px solid #ffffff33;padding:36px 36px 34px;box-shadow:0 30px 100px #000;position:relative}
+.modal h2{font-size:26px;letter-spacing:.3em}.modal .xbtn{position:absolute;right:22px;top:22px}
+.field{width:100%;background:transparent;border:0;border-bottom:1px solid #ffffff44;color:#fff;padding:12px 0;font:inherit;font-size:15px;letter-spacing:.08em;border-radius:0}.field:focus{outline:0;border-color:#fff}
+label.lb3,.lb3{display:block;font-size:11px;letter-spacing:.35em;color:var(--mute);margin-top:22px}
+.seg{display:flex;margin-top:12px;border:1px solid #ffffff33}.seg label{flex:1;position:relative;text-align:center;padding:11px 0;font-size:14px;letter-spacing:.2em;color:var(--mute);cursor:pointer}.seg input{position:absolute;opacity:0;inset:0;cursor:pointer}.seg label:has(input:checked){background:var(--white);color:#04050a;font-weight:500}.seg label:has(input:focus-visible){outline:2px solid #fff;outline-offset:2px}
+.hint{font-size:11px;letter-spacing:.14em;line-height:1.9;color:var(--dim);margin-top:22px}
+.err{margin-top:18px;font-size:13px;letter-spacing:.1em;color:#ffb4a8;border-left:2px solid #ff8f7a;padding:4px 12px}
+.ok{text-align:center;padding:20px 0}.ok .ck{width:64px;height:64px;margin:0 auto 26px;border-radius:50%;border:1px solid #fff;display:grid;place-items:center;font-size:28px;box-shadow:0 0 0 12px #ffffff0d,0 0 50px rgba(var(--pink),.35)}.ok h2{font-size:24px}.ok p{margin-top:22px;font-size:14px;letter-spacing:.14em;line-height:2;color:#aab2c7}.ok .btn{margin-top:28px}
+.toast{position:fixed;top:76px;left:50%;transform:translateX(-50%);background:#f4f6fb;color:#04050a;padding:13px 22px;font-size:13px;letter-spacing:.14em;z-index:300;max-width:90%;width:max-content;box-shadow:0 10px 40px #000a}
+/* ---------- 手機 ---------- */
+@media(max-width:1000px){nav{position:fixed;inset:0;z-index:99;background:var(--bg);flex-direction:column;gap:0;padding:96px 28px 28px;transform:translateX(100%);visibility:hidden;transition:transform .35s,visibility .35s;overflow:auto}
+ nav a{font-size:22px;letter-spacing:.3em;padding:18px 0;border-bottom:1px solid #ffffff22;color:#e6eaf5;font-weight:300}
+ nav a.navcta{display:block;margin-top:30px;text-align:center;background:var(--white);color:#04050a;font-size:13px;letter-spacing:.34em;font-weight:500;padding:15px;border:0}
+ body.navopen nav{transform:none;visibility:visible}.burger{display:inline-flex;position:relative;z-index:101}.ordlink{display:none}
+ .story,.st,.faq,.gift{grid-template-columns:1fr}.ft1{grid-template-columns:1fr 1fr}.ft1>div:first-child{grid-column:1/-1}.card{flex-basis:calc((100% - 40px)/2)}.sec{padding:90px 0}.gift figure{min-height:300px}
+ .reserve:after{background:linear-gradient(#04050af0,#04050abb)}}
+@media(max-width:640px){.card{flex-basis:100%}.ft1{grid-template-columns:1fr}.stats{gap:14px}.srow{grid-template-columns:84px 1fr}.sec{padding:76px 0}.modal{padding:30px 24px}.drawer{padding:26px 22px}.logo{letter-spacing:.3em}.tabs{gap:20px;font-size:13px}.map{min-height:340px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}.card img,.card figure:before{transition:none}.hintx i{animation:none}}
+</style></head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<div id="page">
+<header id="hdr"><a class="logo" href="#home" aria-label="一煎鍾情，回到頁首">一煎鍾情</a>
+<nav id="nav" aria-label="主要導覽"><a href="#story">品牌故事</a><a href="#menu">熱門餐點</a><a href="#menu">線上點餐</a><a href="#gift">冷凍禮盒</a><a href="#stores">門市據點</a><a href="#contact">聯絡我們</a><a class="navcta" href="#menu">立即點餐</a></nav>
+<div class="hr"><button class="cartbtn" id="cartbtn" onclick="openCart()" aria-label="開啟購物車，目前 0 件"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8a3 3 0 016 0"/></svg><b id="badge">0</b></button><a class="ordlink" href="#menu">立即點餐</a>
+<button class="burger" id="navToggle" aria-label="切換導覽" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button></div></header>
+<main id="main">
+<!-- 首頁：輕量版（手機／觸控／減少動態）-->
+<section class="lite" id="home"><div class="lvis" aria-hidden="true"><div class="lb l"></div><div class="lb r"></div><div class="lg dim">煎</div><div class="lg lit">煎</div><div class="lg out">煎</div></div>
+<div class="ltext"><div class="eb">ZHONGSHAN TIAOTONG</div><h1>一煎鍾情</h1><p>夜裡，一盞光，<br>把鍋貼煎成作品。</p><div class="cta"><a class="btn" href="#menu">線上點餐</a><a class="link" href="#stores">探索門市</a></div><p class="note">品牌概念展示・示範店面（假想位於中山條通）<br>非實際營業資訊</p></div></section>
+<!-- 首頁：展間版（桌機）-->
+<div class="runway" id="runway"><div class="stagewrap sticky" id="sticky"><div class="stage" id="stage"><div class="room" id="room">
+<div class="layer" data-d="4" aria-hidden="true"><div class="wall"></div></div>
+<div class="layer" data-d="12" aria-hidden="true"><div class="glyphbox" id="gb"><div class="g dim">煎</div><div class="g lit" id="gl">煎</div><div class="g out">煎</div></div></div>
+<div class="layer" data-d="8" style="z-index:1" aria-hidden="true"><div class="floor"><div class="grid" id="grid"></div></div><div class="horizon"></div></div>
+<div class="layer" data-d="20" id="exhibits" style="opacity:0" aria-hidden="true">
+<div class="ex" style="left:100px" data-i="0"><figure><img src="assets/menu/gyoza-pan.jpg" alt="" loading="lazy"></figure><div class="pl"><span class="n">NO. 01</span><b>招牌鮮肉鍋貼</b><div class="p">NT$ 75</div></div></div>
+<div class="ex" style="left:530px" data-i="1"><figure><img src="assets/menu/gyoza-leek.jpg" alt="" loading="lazy" style="object-position:70% 50%"></figure><div class="pl"><span class="n">NO. 02</span><b>韭菜鮮肉鍋貼</b><div class="p">NT$ 80</div></div></div>
+<div class="ex" style="left:960px" data-i="2"><figure><img src="assets/menu/gyoza-sichuan.jpg" alt="" loading="lazy" style="object-position:40% 50%"></figure><div class="pl"><span class="n">NO. 03</span><b>川香辣味鍋貼</b><div class="p">NT$ 85</div></div></div></div>
+<div class="layer" data-d="26" aria-hidden="true"><div class="fl" id="fl"></div><div class="hit" id="hl"></div><div class="hit" id="hr"></div><div class="pool" id="pl" style="top:690px"></div><div class="pool" id="pr" style="top:690px"></div></div>
+<div class="layer" data-d="22" style="z-index:5" aria-hidden="true"><div class="beam" id="bl"></div><div class="beam" id="br"></div><div class="lamp" id="ll" style="left:-6px;top:246px"></div><div class="lamp" id="lr" style="left:1446px;top:246px"></div></div>
+<canvas class="fx" id="fx" width="1440" height="900" data-d="34" aria-hidden="true"></canvas>
+<div class="layer" data-d="10" id="txt"><div class="stext"><div class="eb">ZHONGSHAN TIAOTONG</div><h1>一煎<br>鍾情</h1></div><div class="scta cta"><a class="btn" href="#menu">線上點餐</a><a class="link" href="#stores">探索門市</a></div><div class="sinfo"><b>聚光燈，2026</b>牆面投影・側邊聚光<br>品牌概念展示・示範店面<br>假想位於中山條通・非實際營業資訊</div></div>
+<div class="pcap" id="pcap" aria-hidden="true"></div><div class="hintx" id="hintx" aria-hidden="true">MOVE THE LIGHT　·　SCROLL<i></i></div>
+</div></div><a class="tomenu" id="tomenu" href="#menu" style="visibility:hidden;opacity:0">看完整菜單 ↓</a></div></div>
+
+<section class="sec" id="story"><div class="wrap story"><figure class="sphoto rv"><img src="assets/story-night.jpg" width="1122" height="1402" loading="lazy" alt="夜晚的日式小巷店門口示意圖：藍色暖簾、紅燈籠與木格子拉門透出暖光"><figcaption>照片為示意素材</figcaption></figure>
+<div class="rv"><div class="eb">OUR STORY</div><h2>好味道，<br>從不將就。</h2><p class="t">從在地豬肉、每日現包，到恰到好處的金黃煎脆比例，我們用心對待每一顆鍋貼。簡單的食材，也能成就不簡單的滋味。</p>
+<div class="stats"><div><b>10,000+</b><span>每日鍋貼</span></div><div><b>100%</b><span>現點現煎</span></div><div><b>30 年</b><span>手藝傳承</span></div></div><p class="snote">以上為虛構品牌示範數據與理念。</p></div></div></section>
+
+<section class="sec" id="menu"><div class="wrap"><div class="sechd"><div><div class="eb">COLLECTION</div><h2>今日作品</h2></div><div id="tabs" class="tabs" role="group" aria-label="菜單分類"></div></div><div id="products" class="menu-list"></div></div></section>
+
+<section class="sec" id="gift"><div class="wrap"><div class="gift rv"><figure><img src="assets/menu/gift-box.jpg" width="1000" height="750" loading="lazy" alt="冷凍鍋貼禮盒示意圖：牛皮紙盒內整齊排列的生鍋貼"></figure><div class="tx"><div class="eb">TAKE HOME THE GOODNESS</div><h2>把匠心帶回家。</h2><p>招牌招財鍋貼禮盒・50 入。以急速冷凍保留鮮味的概念，讓家中餐桌也能享受金黃酥香。建議依實際包裝烹調說明操作。</p><div class="price">NT$ 399</div><div><button class="btn" onclick="add('g1')">加入購物車</button></div><p class="small">冷凍技術、8 分鐘烹調為示範產品規格，未經實測。</p></div></div></div></section>
+
+<section class="reserve" id="reserve"><div class="wrap"><div class="eb">RESERVATION</div><h2>夜裡，留一盞燈給你。</h2><p>想來坐坐？先預約一個時間。<br>（展示用預約連結，非實際營業）</p><a class="btn" href="https://calendar.app.google/LNf5BRBy9pDfcRtr7" target="_blank" rel="noopener">線上預約<span class="sr" style="position:absolute;left:-9999px">（另開新分頁）</span></a></div></section>
+
+<section class="sec stores" id="stores"><div class="wrap"><div class="sechd"><div><div class="eb">FIND US</div><h2>與美味相遇。</h2></div><div id="storeTabs" class="tabs" role="group" aria-label="門市選擇"></div></div>
+<div class="st"><div id="storeInfo" class="sinfo2"></div><div class="map"><span class="pin"></span><div class="lb2"><b id="mapName"></b>中山條通・示範</div><div class="ft">地圖介面示意・非實際定位</div><a id="mapLink" target="_blank" rel="noopener" href="https://maps.google.com">探索周邊地圖 →</a></div></div></div></section>
+
+<section class="sec" id="faq"><div class="wrap faq"><div><div class="eb">FAQ</div><h2>常見問題</h2></div><div>
+<details open><summary>如何線上點餐？</summary><p id="faqOrder">選擇餐點、加入購物車，再選擇取餐方式並填寫聯絡資訊。本網站僅模擬訂單，不會收款或傳送資料。</p></details>
+<details><summary>冷凍鍋貼如何保存？</summary><p>通常應冷凍保存於 −18°C 以下，實際保存期限與料理方式請依商品包裝標示。</p></details>
+<details><summary>可以外送或宅配嗎？</summary><p>本展示提供宅配流程選項；實際配送範圍、運費及合作平台尚未設定。</p></details></div></div></section>
+</main>
+
+<footer id="contact"><div class="wrap"><div class="ft1"><div><div class="flogo">一煎<br>鍾情</div><p class="tg">把每一份日常，煎得剛剛好。</p></div>
+<div><h2 class="fh">FOLLOW</h2><div class="lk"><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a><a href="https://line.me/" target="_blank" rel="noopener">LINE</a><button onclick="showPrivacy()" style="border-bottom:1px solid #fff;padding-bottom:3px;margin-top:8px">隱私權政策</button></div></div>
+<form id="newsletter"><h2 class="fh"><label for="email">訂閱品牌電子報（示範）</label></h2><div class="nl"><input id="email" type="email" required placeholder="電子郵件" autocomplete="off"><button>訂閱 →</button></div><p class="mini">電子報表單為示範，不會儲存或傳送資料。</p></form></div>
+<div class="ft2"><span>© 2026 一煎鍾情｜虛構品牌展示・社群連結為平台首頁・照片為示意素材</span><span>示範店面（假想位於中山條通）・非實際營業資訊</span></div></div></footer>
+<aside aria-label="快速預約"><a class="fab" href="https://calendar.app.google/LNf5BRBy9pDfcRtr7" target="_blank" rel="noopener" aria-label="預約（另開新分頁）"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="1"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>預約</a></aside>
+</div>
+
+<!-- 購物車、結帳、隱私 -->
+<div id="cartOverlay" class="overlay" hidden><div class="drawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle"><div class="hdr"><h2 id="cartTitle">購物車</h2><button class="xbtn" onclick="closeOverlay('cartOverlay')" aria-label="關閉購物車">✕</button></div><div id="cartItems"></div><div class="sum"><div class="l"><span>商品小計</span><strong id="subtotal" style="font-weight:300"></strong></div><div class="t"><span>總金額</span><strong id="total"></strong></div><p class="n">示範價格，不含未設定之運費。</p><button id="checkoutBtn" class="btn" style="width:100%" onclick="checkout()">前往結帳</button></div></div></div>
+<div id="checkoutOverlay" class="overlay" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle"><button class="xbtn" onclick="closeOverlay('checkoutOverlay')" aria-label="關閉結帳">✕</button><h2 id="checkoutTitle">確認訂單</h2>
+<form id="orderForm"><p id="orderSummary" style="margin-top:18px;font-size:14px;letter-spacing:.14em;color:#c3cadb"></p>
+<span class="lb3" id="mlabel">取餐方式</span><div class="seg" role="radiogroup" aria-labelledby="mlabel"><label><input type="radio" name="method" value="內用" checked>內用</label><label><input type="radio" name="method" value="外帶">外帶</label><label><input type="radio" name="method" value="宅配">宅配</label></div>
+<label class="lb3" for="customer">姓名（請用測試資料）</label><input id="customer" class="field" required maxlength="30" autocomplete="off">
+<label class="lb3" for="phone">聯絡電話</label><input id="phone" type="tel" class="field" required pattern="[0-9+\(\)\- ]{8,18}" autocomplete="off">
+<div id="addressBox" hidden><label class="lb3" for="address">配送地址</label><input id="address" class="field" maxlength="100" autocomplete="off"></div>
+<input id="hp" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+<p id="orderNote" class="hint">僅限模擬，請勿填寫真實個資。不會付款或傳送訂單。</p><p id="orderError" class="err" role="alert" hidden></p>
+<button id="orderSubmit" class="btn" style="width:100%;margin-top:24px">提交模擬訂單</button></form>
+<div id="success" hidden class="ok"><div class="ck" aria-hidden="true">✓</div><h2 id="successTitle">訂單已建立（模擬）</h2><p id="successText">感謝您的體驗！未產生實際交易。</p><button class="btn" onclick="closeOverlay('checkoutOverlay')">繼續逛逛</button></div></div></div>
+<div id="privacyOverlay" class="overlay" hidden><div class="modal" role="dialog" aria-modal="true" aria-label="隱私權政策"><h2 style="font-size:24px;margin-bottom:20px">隱私權政策（示範）</h2><p id="privacyText" style="font-size:14px;line-height:2.1;letter-spacing:.08em;color:#c3cadb">本頁不儲存或傳送訂單與電子報表單資料，購物車僅存在目前頁面的記憶體。外部 CDN、圖片服務及社群連結可能依各服務政策處理連線資訊。</p><button class="btn" style="margin-top:26px" onclick="closeOverlay('privacyOverlay')">關閉</button></div></div>
+<div id="toast" class="toast" role="status" hidden></div>
+<noscript><p style="position:fixed;left:0;right:0;bottom:0;background:#fff;color:#000;padding:12px;text-align:center;z-index:999">本網站需要啟用 JavaScript 才能使用購物車與結帳功能。</p></noscript>
+
 <script>
 // 訂單串接：貼上 Google Apps Script「網頁應用程式」網址即啟用；留空則維持「模擬訂單」模式
 const ORDER_API_URL='https://script.google.com/macros/s/AKfycbxR7Fhxj7GZsK0oB6qJuj6DeL33I0IFo-gwjZkU2IqCGyFYwmVQ5z3ty6tuYfzEVJrPyw/exec';
-// Product catalogue and client-side state
+// 菜單資料與狀態
 const categories=['招牌鍋貼','精選水餃','湯品／飲料','經典小菜'];const photos=['gyoza-pan','gyoza-boiled','soup-hot-sour','cucumber'],productPhotos={p2:'gyoza-leek',p3:'gyoza-sichuan',p5:'shrimp-dumpling',p6:'soup-hot-sour',p7:'soymilk',p8:'cucumber',p9:'tofu'};
 const products=[['p1',0,'招牌鮮肉鍋貼','在地豬肉與清甜高麗菜・10 入',75,'人氣'],['p2',0,'韭菜鮮肉鍋貼','濃郁韭香與鮮肉・10 入',80,'爆汁'],['p3',0,'川香辣味鍋貼','香麻微辣・10 入',85,'微辣'],['p4',1,'高麗菜水餃','鮮甜清爽・10 入',75,'經典'],['p5',1,'鮮蝦水餃','鮮蝦與肉餡・10 入',110,'推薦'],['p6',2,'酸辣湯','酸香開胃',45,'微辣'],['p7',2,'無糖豆漿','清香滑順',30,'無糖'],['p8',3,'涼拌小黃瓜','爽脆開胃',40,'清爽'],['p9',3,'滷豆干','慢滷入味',45,'經典'],['g1',4,'招牌招財鍋貼禮盒','冷凍 50 入',399,'禮盒']].map(([id,cat,name,desc,price,tag])=>({id,cat,name,desc,price,tag}));
-const $=id=>document.getElementById(id),money=n=>'NT$ '+n.toLocaleString('zh-TW');let cart={},category=0,timer,previousFocus;function icons(){if(window.lucide)lucide.createIcons()}
-function renderMenu(){ $('tabs').innerHTML=categories.map((c,i)=>`<button class="tab ${i===category?'active':''}" aria-pressed="${i===category}" onclick="setCategory(${i})">${c}</button>`).join('');$('products').innerHTML=products.filter(p=>p.cat===category).map(p=>`<article class="tile"><img class="photo" loading="lazy" src="assets/menu/${productPhotos[p.id]||photos[p.cat]}.jpg" width="1000" height="750" alt="${p.name}${productPhotos[p.id]?'':'類別'}示意圖"><div class="p-5"><span class="text-xs bg-orange-100 text-orange-900 rounded px-2 py-1">${p.tag}</span><h3 class="text-xl font-bold mt-3">${p.name}</h3><p class="small mt-2">${p.desc}</p><div class="flex justify-between items-center gap-2 mt-5"><strong class="text-xl">${money(p.price)}</strong><button class="btn" onclick="add('${p.id}')">加入購物車</button></div></div></article>`).join('')}
-function setCategory(i){category=i;renderMenu();$('tabs').children[i].focus()}function add(id){cart[id]=(cart[id]||0)+1;renderCart();notify('已加入購物車：'+products.find(p=>p.id===id).name)}function change(id,n){cart[id]=(cart[id]||0)+n;if(cart[id]<=0)delete cart[id];renderCart()}function removeItem(id){delete cart[id];renderCart()}function sum(){return Object.entries(cart).reduce((s,[id,n])=>s+products.find(p=>p.id===id).price*n,0)}function renderCart(){const entries=Object.entries(cart);$('badge').textContent=entries.reduce((s,[id,n])=>s+n,0);$('cartItems').innerHTML=entries.length?entries.map(([id,n])=>{const p=products.find(p=>p.id===id);return `<div class="border-b border-stone-300 py-4"><div class="flex justify-between"><strong>${p.name}</strong><button class="underline text-sm" onclick="removeItem('${id}')">刪除</button></div><div class="flex justify-between items-center mt-3"><div class="flex items-center gap-3"><button class="border rounded px-3 py-1" aria-label="減少${p.name}" onclick="change('${id}',-1)">−</button><span>${n}</span><button class="border rounded px-3 py-1" aria-label="增加${p.name}" onclick="change('${id}',1)">+</button></div><span>${money(p.price*n)}</span></div></div>`}).join(''):'<p class="small">購物車目前是空的。</p>';$('subtotal').textContent=$('total').textContent=money(sum());$('checkoutBtn').disabled=!entries.length;$('checkoutBtn').style.opacity=entries.length?1:.5}
-function notify(msg){$('toast').textContent=msg;$('toast').hidden=false;clearTimeout(timer);timer=setTimeout(()=>$('toast').hidden=true,2800)}function openOverlay(id){previousFocus=document.activeElement;$(id).hidden=false;document.body.style.overflow='hidden';$('home').inert=true;document.querySelector('header').inert=true;document.querySelector('footer').inert=true;$(id).querySelector('button').focus()}function closeOverlay(id){$(id).hidden=true;document.body.style.overflow='';$('home').inert=false;document.querySelector('header').inert=false;document.querySelector('footer').inert=false;previousFocus?.focus()}function openCart(){renderCart();openOverlay('cartOverlay')}function checkout(){if(!sum())return;closeOverlay('cartOverlay');$('orderForm').reset();updateMethod();$('orderForm').hidden=false;$('orderError').hidden=true;$('success').hidden=true;$('orderSummary').textContent='商品總金額：'+money(sum());openOverlay('checkoutOverlay')}function updateMethod(){let delivery=$('method').value==='宅配';$('addressBox').hidden=!delivery;$('address').required=delivery}$('method').addEventListener('change',updateMethod);function showOrderError(m){const el=$('orderError');el.textContent=m;el.hidden=false}
+const $=id=>document.getElementById(id),money=n=>'NT$ '+n.toLocaleString('zh-TW');let cart={},category=0,timer,previousFocus;
+const photoOf=p=>productPhotos[p.id]||(p.id==='g1'?'gift-box':photos[p.cat]);
+const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
+let io=null;function observeReveal(){if(reduceMotion.matches||!('IntersectionObserver' in window)){document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));return}
+ if(!io)io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});document.querySelectorAll('.rv:not(.in)').forEach(e=>io.observe(e))}
+function renderMenu(){$('tabs').innerHTML=categories.map((c,i)=>`<button class="tab ${i===category?'active':''}" aria-pressed="${i===category}" onclick="setCategory(${i})">${c}</button>`).join('');
+ $('products').innerHTML=products.filter(p=>p.cat===category).map(p=>`<article class="card rv"><figure><img loading="lazy" src="assets/menu/${photoOf(p)}.jpg" width="1000" height="750" alt="${p.name}${productPhotos[p.id]?'':'類別'}示意圖"><span class="tag">${p.tag}</span></figure><div class="bd"><h3>${p.name}</h3><p>${p.desc}</p><div class="pr"><b>${money(p.price)}</b><button class="add" onclick="add('${p.id}')" aria-label="加入購物車：${p.name}">加入購物車</button></div></div></article>`).join('');observeReveal()}
+function setCategory(i){category=i;renderMenu();$('tabs').children[i].focus()}
+function add(id){cart[id]=(cart[id]||0)+1;renderCart();notify('已加入購物車：'+products.find(p=>p.id===id).name)}
+function change(id,n){cart[id]=(cart[id]||0)+n;if(cart[id]<=0)delete cart[id];renderCart()}
+function removeItem(id){delete cart[id];renderCart()}
+function sum(){return Object.entries(cart).reduce((s,[id,n])=>s+products.find(p=>p.id===id).price*n,0)}
+function renderCart(){const entries=Object.entries(cart);const count=entries.reduce((s,[id,n])=>s+n,0);$('badge').textContent=count;$('cartbtn').setAttribute('aria-label','開啟購物車，目前 '+count+' 件');
+ $('cartItems').innerHTML=entries.length?entries.map(([id,n])=>{const p=products.find(p=>p.id===id);return `<div class="it"><img src="assets/menu/${photoOf(p)}.jpg" alt="" width="84" height="84"><div><div class="top"><b>${p.name}</b><button class="del" onclick="removeItem('${id}')" aria-label="刪除${p.name}">刪除</button></div><div class="qr"><div class="qty"><button aria-label="減少${p.name}" onclick="change('${id}',-1)">−</button><span>${n}</span><button aria-label="增加${p.name}" onclick="change('${id}',1)">+</button></div><span>${money(p.price*n)}</span></div></div></div>`}).join(''):'<p class="empty">購物車目前是空的。</p>';
+ $('subtotal').textContent=$('total').textContent=money(sum());$('checkoutBtn').disabled=!entries.length}
+function notify(msg){$('toast').textContent=msg;$('toast').hidden=false;clearTimeout(timer);timer=setTimeout(()=>$('toast').hidden=true,2800)}
+function openOverlay(id){previousFocus=document.activeElement;$(id).hidden=false;document.body.style.overflow='hidden';$('page').inert=true;$(id).querySelector('button').focus()}
+function closeOverlay(id){$(id).hidden=true;document.body.style.overflow='';$('page').inert=false;previousFocus?.focus()}
+function openCart(){renderCart();openOverlay('cartOverlay')}
+const method=()=>document.querySelector('input[name=method]:checked').value;
+function checkout(){if(!sum())return;closeOverlay('cartOverlay');$('orderForm').reset();updateMethod();$('orderForm').hidden=false;$('orderError').hidden=true;$('success').hidden=true;$('orderSummary').textContent='商品總金額：'+money(sum());openOverlay('checkoutOverlay')}
+function updateMethod(){const d=method()==='宅配';$('addressBox').hidden=!d;$('address').required=d}
+document.querySelectorAll('input[name=method]').forEach(r=>r.addEventListener('change',updateMethod));
+function showOrderError(m){const el=$('orderError');el.textContent=m;el.hidden=false}
 function applyOrderMode(){if(!ORDER_API_URL)return;
  $('orderNote').textContent='本網站為展示作品，不會收款或實際出貨。送出的訂單資料（姓名、電話、取餐方式、地址、訂單內容）會寫入示範用的 Google 試算表，請只填寫測試資料，不要填寫真實個資。';
  $('orderSubmit').textContent='送出訂單（展示用）';$('successTitle').textContent='訂單已送出（展示）';
  $('faqOrder').textContent='選擇餐點、加入購物車，再選擇取餐方式並填寫聯絡資訊。本網站為展示作品，不會收款；送出的測試訂單會寫入示範用的 Google 試算表，請勿填寫真實個資。';
- $('privacyText').textContent='本網站為展示作品。結帳時送出的資料（姓名、電話、取餐方式、配送地址、訂單內容）會傳送並寫入網站經營者的示範用 Google 試算表，僅用於展示訂單系統功能，不用於付款或實際出貨。請只填寫測試資料，勿填寫真實個資。電子報表單仍不會儲存或傳送資料，購物車僅存在目前頁面的記憶體。外部 CDN、圖片服務、Google 服務及社群連結可能依各服務政策處理連線資訊。'}
+ $('privacyText').textContent='本網站為展示作品。結帳時送出的資料（姓名、電話、取餐方式、配送地址、訂單內容）會傳送並寫入網站經營者的示範用 Google 試算表，僅用於展示訂單系統功能，不用於付款或實際出貨。請只填寫測試資料，勿填寫真實個資。電子報表單仍不會儲存或傳送資料，購物車僅存在目前頁面的記憶體。外部字型、圖片服務、Google 服務及社群連結可能依各服務政策處理連線資訊。'}
 $('orderForm').addEventListener('submit',async e=>{e.preventDefault();
  if(!ORDER_API_URL){cart={};renderCart();e.target.reset();updateMethod();e.target.hidden=true;$('success').hidden=false;$('success').querySelector('button').focus();return}
  const btn=$('orderSubmit');$('orderError').hidden=true;
  if(!navigator.onLine){showOrderError('目前沒有網路連線，請連線後再試一次。');return}
- const payload={items:Object.entries(cart).map(([id,qty])=>({id,qty})),name:$('customer').value.trim(),phone:$('phone').value.trim(),method:$('method').value,address:$('address').value.trim(),total:sum(),website:$('hp').value};
+ const payload={items:Object.entries(cart).map(([id,qty])=>({id,qty})),name:$('customer').value.trim(),phone:$('phone').value.trim(),method:method(),address:$('address').value.trim(),total:sum(),website:$('hp').value};
  btn.disabled=true;btn.textContent='送出中…';const ctl=new AbortController(),tm=setTimeout(()=>ctl.abort(),20000);
  try{const res=await fetch(ORDER_API_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload),signal:ctl.signal});const data=await res.json();
   if(data&&data.ok){cart={};renderCart();e.target.reset();updateMethod();e.target.hidden=true;$('successText').textContent='訂單編號：'+data.orderId+'（展示用，未產生實際交易）';$('success').hidden=false;$('success').querySelector('button').focus()}
   else showOrderError((data&&data.message)||'送出失敗，請稍後再試。')}
  catch(x){showOrderError(x.name==='AbortError'?'連線逾時，請稍後再試。':'無法連線到訂單系統，請稍後再試。')}
- finally{clearTimeout(tm);btn.disabled=false;btn.textContent='送出訂單（展示用）'}});function showPrivacy(){openOverlay('privacyOverlay')}
-// Store switching and navigation
-const stores=[{name:'台北旗艦店',area:'台北市中山區',hours:'11:00–21:00'},{name:'信義概念店',area:'台北市信義區',hours:'11:30–21:30'}];function setStore(i){const s=stores[i];$('storeTabs').innerHTML=stores.map((v,j)=>`<button class="tab ${i===j?'active':''}" aria-pressed="${i===j}" onclick="setStore(${j});$('storeTabs').children[${j}].focus()">${v.name}</button>`).join('');$('storeInfo').innerHTML=`<h3 class="text-2xl font-bold mb-4">${s.name}</h3><p class="mb-3">地址：${s.area}（示範區域，無實際店址）</p><p class="mb-3">電話：尚未設定</p><p class="mb-4">營業時間：${s.hours}（示範）</p><p class="small mb-2">外送平台入口（未建立合作）</p><div class="flex gap-3 flex-wrap"><a class="border rounded px-3 py-2 text-green-800 font-bold" href="https://www.ubereats.com/tw" target="_blank" rel="noopener">Uber Eats</a><a class="border rounded px-3 py-2 text-pink-700 font-bold" href="https://www.foodpanda.com.tw/" target="_blank" rel="noopener">foodpanda</a></div>`;$('mapName').textContent=s.area;$('mapLink').href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(s.area)}$('navToggle').onclick=()=>{const open=$('nav').classList.toggle('open');$('navToggle').setAttribute('aria-expanded',open)};$('nav').querySelectorAll('a').forEach(a=>a.onclick=()=>{$('nav').classList.remove('open');$('navToggle').setAttribute('aria-expanded','false')});$('newsletter').onsubmit=e=>{e.preventDefault();e.target.reset();notify('訂閱成功（模擬，未傳送資料）')};document.querySelectorAll('.overlay').forEach(el=>el.addEventListener('click',e=>{if(e.target===el)closeOverlay(el.id)}));document.addEventListener('keydown',e=>{const el=document.querySelector('.overlay:not([hidden])');if(!el)return;if(e.key==='Escape')closeOverlay(el.id);if(e.key==='Tab'){const f=[...el.querySelectorAll('button,input,select,a[href]')].filter(x=>!x.disabled&&x.getClientRects().length);if(!f.length)return;if(e.shiftKey&&document.activeElement===f[0]){e.preventDefault();f.at(-1).focus()}else if(!e.shiftKey&&document.activeElement===f.at(-1)){e.preventDefault();f[0].focus()}}});applyOrderMode();renderMenu();renderCart();setStore(0);icons();
+ finally{clearTimeout(tm);btn.disabled=false;btn.textContent='送出訂單（展示用）'}});
+function showPrivacy(){openOverlay('privacyOverlay')}
+// 門市切換
+const stores=[{name:'台北旗艦店',area:'台北市中山區',hours:'11:00–21:00'},{name:'信義概念店',area:'台北市信義區',hours:'11:30–21:30'}];
+function setStore(i){const s=stores[i];$('storeTabs').innerHTML=stores.map((v,j)=>`<button class="tab ${i===j?'active':''}" aria-pressed="${i===j}" onclick="setStore(${j});$('storeTabs').children[${j}].focus()">${v.name}</button>`).join('');
+ $('storeInfo').innerHTML=`<h3>${s.name}</h3><div class="srow"><span>地址</span><span>${s.area}${i===0?'（中山條通・':'（'}示範區域，無實際店址）</span></div><div class="srow"><span>電話</span><span>尚未設定</span></div><div class="srow"><span>營業時間</span><span>${s.hours}（示範）</span></div><div class="srow"><span>外送平台</span><span><span style="display:block;font-size:12px;color:var(--mute);letter-spacing:.2em">入口（未建立合作）</span><span class="chips"><a href="https://www.ubereats.com/tw" target="_blank" rel="noopener">Uber Eats</a><a href="https://www.foodpanda.com.tw/" target="_blank" rel="noopener">foodpanda</a></span></span></div>`;
+ $('mapName').textContent=s.area;$('mapLink').href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(s.area)}
+// 導覽、頁首、對話框
+const closeNav=()=>{document.body.classList.remove('navopen');$('navToggle').setAttribute('aria-expanded','false')};
+$('navToggle').onclick=()=>{const o=document.body.classList.toggle('navopen');$('navToggle').setAttribute('aria-expanded',o)};
+$('nav').querySelectorAll('a').forEach(a=>a.addEventListener('click',closeNav));
+addEventListener('scroll',()=>$('hdr').classList.toggle('solid',scrollY>60),{passive:true});$('hdr').classList.toggle('solid',scrollY>60);
+$('newsletter').onsubmit=e=>{e.preventDefault();e.target.reset();notify('訂閱成功（模擬，未傳送資料）')};
+document.querySelectorAll('.overlay').forEach(el=>el.addEventListener('click',e=>{if(e.target===el)closeOverlay(el.id)}));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&document.body.classList.contains('navopen')){closeNav();$('navToggle').focus()}
+ const el=document.querySelector('.overlay:not([hidden])');if(!el)return;if(e.key==='Escape')closeOverlay(el.id);
+ if(e.key==='Tab'){const f=[...el.querySelectorAll('button,input,a[href]')].filter(x=>!x.disabled&&x.type!=='hidden'&&x.tabIndex>=0&&x.getClientRects().length);if(!f.length)return;if(e.shiftKey&&document.activeElement===f[0]){e.preventDefault();f.at(-1).focus()}else if(!e.shiftKey&&document.activeElement===f.at(-1)){e.preventDefault();f[0].focus()}}});
+applyOrderMode();renderMenu();renderCart();setStore(0);observeReveal();
+</script>
 
-// Hero crowd animation: flowing warm light lines with walking silhouettes as negative space
-(function(){const cv=document.getElementById('crowd');if(!cv||!cv.getContext)return;const ctx=cv.getContext('2d');
-const peopleC=document.createElement('canvas'),pc=peopleC.getContext('2d'),haloC=document.createElement('canvas'),hc=haloC.getContext('2d');
-const reduce=window.matchMedia('(prefers-reduced-motion: reduce)');let w=0,h=0,dpr=1,people=[],dots=[],grad,t=0,last=0,raf=0,onScreen=true;
-const rnd=i=>{const x=Math.sin(i*127.1+311.7)*43758.5453;return x-Math.floor(x)};
-function setup(){dpr=Math.min(window.devicePixelRatio||1,2);w=cv.clientWidth;h=cv.clientHeight;if(!w||!h)return;[cv,peopleC,haloC].forEach(c=>{c.width=Math.round(w*dpr);c.height=Math.round(h*dpr)});
- const n=w<600?5:w<1000?7:10;people=Array.from({length:n},(_,i)=>({x:(i+.5)/n*w,dir:rnd(i*3+1)>.4?1:-1,v:16+rnd(i+7)*16,s:.78+rnd(i+3)*.3,coat:rnd(i+11)>.5,seed:rnd(i+5)*6.3}));
- dots=Array.from({length:w<600?30:65},(_,i)=>({x:rnd(i)*w,y:h*.2+rnd(i+99)*h*.78,r:.5+rnd(i+7)*1.3,vx:(rnd(i+3)-.4)*6,ph:rnd(i+9)*6.3}));
- grad=ctx.createLinearGradient(0,0,w,0);grad.addColorStop(0,'rgb(251,146,60)');grad.addColorStop(.5,'rgb(253,200,120)');grad.addColorStop(1,'rgb(251,160,70)');render()}
-function person(c,x,y,sc,dir,ph,coat){c.save();c.translate(x,y);c.scale(dir*sc,sc);c.fillStyle='#fff';c.strokeStyle='#fff';c.lineCap='round';c.lineJoin='round';
- const a=ph*.42,hip=[0,-37];
- const leg=(a1,a2,wd)=>{const k=[hip[0]+20*Math.sin(a1),hip[1]+20*Math.cos(a1)],f=[k[0]+19*Math.sin(a2),k[1]+19*Math.cos(a2)];c.lineWidth=wd;c.beginPath();c.moveTo(hip[0],hip[1]);c.lineTo(k[0],k[1]);c.stroke();c.lineWidth=wd*.8;c.beginPath();c.moveTo(k[0],k[1]);c.lineTo(f[0],f[1]);c.stroke();c.beginPath();c.ellipse(f[0]+1.5,f[1]-.5,3,1.4,0,0,6.3);c.fill()};
- leg(-a,-a-.38,6.2);leg(a,a*.35,6.2);
- const hem=coat?-24:-34,fl=coat?12:9;
- c.beginPath();c.moveTo(-5.5,-63);c.quadraticCurveTo(-8,-50,-fl+1,hem);c.lineTo(fl-1,hem);c.quadraticCurveTo(8,-50,5.5,-63);c.quadraticCurveTo(0,-65.5,-5.5,-63);c.fill();
- c.lineWidth=3.6;c.beginPath();c.moveTo(-5.5,-61);c.lineTo(-6.5+Math.sin(a)*11,-44);c.moveTo(5.5,-61);c.lineTo(6.5-Math.sin(a)*11,-44);c.stroke();
- c.fillRect(-1.8,-67,3.6,5);c.beginPath();c.ellipse(.8,-71.5,4.4,5.4,0,0,6.3);c.fill();c.restore()}
-function render(){if(!w)return;ctx.setTransform(dpr,0,0,dpr,0,0);ctx.globalCompositeOperation='source-over';ctx.clearRect(0,0,w,h);
- ctx.strokeStyle=grad;ctx.lineWidth=.9;
- for(let y=h*.14;y<h;y+=5){ctx.globalAlpha=.16+.42*(y/h);ctx.beginPath();for(let x=0;x<=w+6;x+=6){const yy=y+Math.sin(x/52+y/8+t*.55)*2.6+Math.sin(x/130+y/5+t*.3)*2;x?ctx.lineTo(x,yy):ctx.moveTo(x,yy)}ctx.stroke()}
- ctx.globalAlpha=1;dots.forEach(d=>{const a=.35+.5*Math.sin(t*.8+d.ph)**2;ctx.fillStyle='rgba(253,200,130,'+(a*.18)+')';ctx.beginPath();ctx.arc(d.x,d.y,d.r*3.2,0,6.3);ctx.fill();ctx.fillStyle='rgba(255,226,170,'+a+')';ctx.beginPath();ctx.arc(d.x,d.y,d.r,0,6.3);ctx.fill()});
- pc.setTransform(dpr,0,0,dpr,0,0);pc.clearRect(0,0,w,h);const base=h*.66/78;
- people.forEach(p=>person(pc,p.x,h-6,base*p.s,p.dir,Math.sin(t*p.v*.12+p.seed),p.coat));
- ctx.setTransform(1,0,0,1,0,0);ctx.globalCompositeOperation='destination-out';ctx.drawImage(peopleC,0,0);
- hc.setTransform(1,0,0,1,0,0);hc.globalCompositeOperation='source-over';hc.clearRect(0,0,haloC.width,haloC.height);hc.shadowColor='rgba(255,176,90,1)';[5,14].forEach(b=>{hc.shadowBlur=b*dpr;hc.drawImage(peopleC,0,0)});hc.shadowBlur=0;hc.globalCompositeOperation='destination-out';hc.drawImage(peopleC,0,0);
- ctx.globalCompositeOperation='source-over';ctx.drawImage(haloC,0,0)}
-function frame(now){raf=0;const dt=Math.min(.05,(now-(last||now))/1000);last=now;t+=dt;people.forEach(p=>{p.x+=p.dir*p.v*dt;if(p.dir>0&&p.x>w+30)p.x=-30;if(p.dir<0&&p.x<-30)p.x=w+30});render();loop()}
-function loop(){if(!raf&&onScreen&&!reduce.matches&&!document.hidden)raf=requestAnimationFrame(frame)}
-function stop(){if(raf){cancelAnimationFrame(raf);raf=0}last=0}
-let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{setup();loop()},150)});
-document.addEventListener('visibilitychange',()=>document.hidden?stop():loop());
-reduce.addEventListener&&reduce.addEventListener('change',()=>{reduce.matches?(stop(),render()):loop()});
-if('IntersectionObserver' in window)new IntersectionObserver(e=>{onScreen=e[0].isIntersecting;onScreen?loop():stop()}).observe(cv);
-const hd=document.querySelector('header');const setHH=()=>{if(hd)document.documentElement.style.setProperty('--hh',hd.offsetHeight+'px')};setHH();window.addEventListener('resize',setHH);setup();loop()})();
-</script><script type="module">
-// 3D crowd scene (desktop only). Falls back to the 2D canvas animation on small screens, reduced motion, no WebGL, or any error.
+<script>
+// 首頁展間動畫（桌機）：聚光燈掃描＋蒸氣塵埃、滑鼠 3D 視差與手電筒、捲動導演、投影換片。
+// 手機／觸控／減少動態時不啟動，改用輕量版（純 CSS）。
 (function(){
-const hero=document.querySelector('.hero'),c2=document.getElementById('crowd'),c3=document.getElementById('crowd3d');if(!hero||!c2||!c3)return;
-const mqDesk=matchMedia('(min-width:901px)'),mqRM=matchMedia('(prefers-reduced-motion: reduce)');
-const saveData=!!(navigator.connection&&navigator.connection.saveData);
+const root=document.documentElement,g=id=>document.getElementById(id);
+const clamp=(x,a,b)=>Math.min(b,Math.max(a,x)),sm=(x,a,b)=>{const t=clamp((x-a)/(b-a),0,1);return t*t*(3-2*t)},lerp=(a,b,t)=>a+(b-a)*t;
 const rnd=i=>{const x=Math.sin(i*127.1+311.7)*43758.5453;return x-Math.floor(x)};
-const eligible=()=>mqDesk.matches&&!mqRM.matches&&!saveData;
-const hasGL=()=>{try{const c=document.createElement('canvas');return !!(c.getContext('webgl2')||c.getContext('webgl'))}catch(e){return false}};
-let THREEp=null,app=null,failed=false,starting=false;
-const loadThree=()=>THREEp||(THREEp=import('https://unpkg.com/three@0.160.0/build/three.module.js'));
-function create(T){
- const renderer=new T.WebGLRenderer({canvas:c3,antialias:true,alpha:true,powerPreference:'low-power'});renderer.setClearColor(0x000000,0);renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.15;renderer.outputColorSpace=T.SRGBColorSpace;
- const mk=(r,g,b)=>{const c=document.createElement('canvas');c.width=c.height=r;const x=c.getContext('2d'),gr=x.createRadialGradient(r/2,r/2,0,r/2,r/2,r/2);gr.addColorStop(0,g);gr.addColorStop(.3,b);gr.addColorStop(1,'rgba(255,130,40,0)');x.fillStyle=gr;x.fillRect(0,0,r,r);return new T.CanvasTexture(c)};
- const dotTex=mk(64,'rgba(255,240,200,1)','rgba(255,190,110,.8)'),glowTex=mk(256,'rgba(255,225,160,1)','rgba(255,150,60,.65)');
- const sign=(()=>{const c=document.createElement('canvas');c.width=512;c.height=160;const x=c.getContext('2d');x.fillStyle='#2b1b10';x.fillRect(0,0,512,160);x.strokeStyle='#e9c98f';x.lineWidth=4;x.strokeRect(8,8,496,144);x.fillStyle='#fde8c0';x.font='bold 84px "Noto Serif TC",serif';x.textAlign='center';x.textBaseline='middle';x.fillText('一餃匠心',256,86);const t=new T.CanvasTexture(c);t.colorSpace=T.SRGBColorSpace;return t})();
- const RIM=1.28,geo={head:new T.SphereGeometry(.115,16,12),torso:new T.CylinderGeometry(.14,.2,.62,14),arm:new T.CapsuleGeometry(.04,.46,4,8),leg:new T.CapsuleGeometry(.065,.62,4,8),head2:new T.SphereGeometry(.115*RIM,16,12),torso2:new T.CylinderGeometry(.14*RIM,.2*RIM,.62,14),arm2:new T.CapsuleGeometry(.04*RIM,.46,4,8),leg2:new T.CapsuleGeometry(.065*RIM,.62,4,8)};
- let scene,cam,W=0,H=0,people=[],lines=[],dots=null,dotData=null,flick=[],doorGlow=null,B=null,t=0,last=0,raf=0,onScreen=true,dead=false;
- function figure(zb){const body=new T.MeshBasicMaterial({color:new T.Color('#1f1109').lerp(new T.Color('#4a2e1a'),1-zb),transparent:true,opacity:0,depthWrite:false});
-  const shell=new T.MeshBasicMaterial({color:'#ff9a40',side:T.BackSide,transparent:true,opacity:0,blending:T.AdditiveBlending,depthWrite:false});const g=new T.Group();const limbs=[];
-  [[body,''],[shell,'2']].forEach(([mat,k])=>{const ro=k?1:2;const add=(ge,x,y)=>{const o=new T.Mesh(ge,mat);o.renderOrder=ro;o.position.set(x,y,0);g.add(o)};add(geo['head'+k],0,1.66);add(geo['torso'+k],0,1.18);
-   const limb=(ge,len,r,x,y,i)=>{if(k===''){const p=new T.Group();p.position.set(x,y,0);limbs[i]=[p];const o=new T.Mesh(ge,mat);o.renderOrder=2;o.position.y=-len/2-r*.6;p.add(o);g.add(p)}else{const o=new T.Mesh(ge,mat);o.renderOrder=1;o.position.y=-len/2-r*.6;limbs[i][0].add(o)}};
-   limb(geo['arm'+k],.46,.04,.17,1.42,0);limb(geo['arm'+k],.46,.04,-.17,1.42,1);limb(geo['leg'+k],.62,.065,.07,.86,2);limb(geo['leg'+k],.62,.065,-.07,.86,3)});
-  g.userData={body,shell,limbs:limbs.map(x=>x[0])};g.rotation.y=Math.PI/2-.1;return g}
- function shop(x,z,sc,ry){const g=new T.Group();g.position.set(x,0,z);g.scale.setScalar(sc);g.rotation.y=ry;
-  const box=(w,h,d,c,px,py,pz,em)=>{const m=new T.Mesh(new T.BoxGeometry(w,h,d),new T.MeshStandardMaterial({color:c,roughness:.8,emissive:em||0,emissiveIntensity:em?1.4:0}));m.position.set(px,py,pz);g.add(m)};
-  box(3.6,2.9,2.6,'#d9b98c',0,1.45,0);box(3.8,.22,2.8,'#4a2e1c',0,2.95,0);box(.9,1.9,.06,'#ffd08a',.9,.95,1.33,'#ff9d3a');box(1.2,1.1,.06,'#ffd9a0',-1,1.35,1.33,'#ff9d3a');
-  const sg=new T.Mesh(new T.PlaneGeometry(2.4,.75),new T.MeshBasicMaterial({map:sign}));sg.position.set(0,2.55,1.34);g.add(sg);
-  for(let i=0;i<8;i++){const m=new T.Mesh(new T.BoxGeometry(.5,.08,.95),new T.MeshStandardMaterial({color:i%2?'#c9531f':'#f8f4eb',roughness:.8,emissive:i%2?'#6a2000':'#3a3020',emissiveIntensity:.5}));m.position.set(-1.75+i*.5,2.2,1.75);m.rotation.x=.32;g.add(m)}
-  [-1.6,1.6].forEach(px=>{const l=new T.Mesh(new T.SphereGeometry(.17,12,10),new T.MeshStandardMaterial({color:'#ff7a2a',emissive:'#ff5a10',emissiveIntensity:2}));l.position.set(px,2.05,1.95);g.add(l);const sp=new T.Sprite(new T.SpriteMaterial({map:glowTex,blending:T.AdditiveBlending,depthWrite:false,opacity:.8}));sp.position.copy(l.position);sp.scale.set(1.3,1.3,1);g.add(sp);flick.push(sp)});
-  const dl=new T.PointLight('#ffb866',3,9);dl.position.set(.9,1.1,2.4);g.add(dl);
-  doorGlow=new T.Sprite(new T.SpriteMaterial({map:glowTex,blending:T.AdditiveBlending,depthWrite:false,opacity:.9}));doorGlow.position.set(.9,1,2);doorGlow.scale.set(5.5,4.2,1);g.add(doorGlow);return g}
- function disposeScene(){if(!scene)return;scene.traverse(o=>{if(o.geometry&&!Object.values(geo).includes(o.geometry))o.geometry.dispose();if(o.material){(Array.isArray(o.material)?o.material:[o.material]).forEach(m=>m.dispose())}});scene=null;people=[];lines=[];dots=null;flick=[];doorGlow=null}
- function build(){disposeScene();W=c3.clientWidth;H=c3.clientHeight;if(!W||!H)return;renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,1.5));renderer.setSize(W,H,false);
-  scene=new T.Scene();scene.fog=new T.FogExp2('#241509',.03);scene.add(new T.AmbientLight('#8a5a38',.7));scene.add(new T.HemisphereLight('#ffd0a0','#2a1608',.5));
-  const asp=W/H,vfov=38,dist=10.5,halfW=Math.tan(vfov*Math.PI/360)*dist*asp;cam=new T.PerspectiveCamera(vfov,asp,.1,120);cam.position.set(0,1.9,dist);cam.lookAt(0,1.6,0);
-  const shopX=halfW*.56,ry=-.35;scene.add(shop(shopX,-.7,1.15,ry));const doorX=shopX+.42;
-  const xL=-halfW*1.3,xR=shopX+4;B={halfW,doorX,xL,xR};
-  for(let i=0;i<46;i++){const g=new T.BufferGeometry();const n=90;const a=new T.BufferAttribute(new Float32Array((n+1)*3),3);a.setUsage(T.DynamicDrawUsage);g.setAttribute('position',a);const ln=new T.Line(g,new T.LineBasicMaterial({color:i%3?'#fb923c':'#fde68a',transparent:true,opacity:.3+.38*rnd(i),blending:T.AdditiveBlending,depthWrite:false}));ln.frustumCulled=false;scene.add(ln);lines.push({ln,i,z0:3.5-i*.22,n})}
-  const nd=w=>w<1500?380:520,N=nd(W);const pos=new Float32Array(N*3);dotData=Array.from({length:N},(_,i)=>({x:xL+rnd(i)*(xR-xL),y:rnd(i+9)*3.2,z:-3+rnd(i+3)*7.5,v:.25+rnd(i+5)*.5,ph:rnd(i+7)*6.3}));
-  const dg=new T.BufferGeometry();dg.setAttribute('position',new T.BufferAttribute(pos,3));dg.attributes.position.setUsage(T.DynamicDrawUsage);dots=new T.Points(dg,new T.PointsMaterial({map:dotTex,size:.28,transparent:true,blending:T.AdditiveBlending,depthWrite:false,sizeAttenuation:true}));dots.frustumCulled=false;scene.add(dots);
-  const np=Math.min(18,Math.round((doorX-xL*.85)/2.6));for(let i=0;i<np;i++){const z=-2.2+rnd(i+4)*5.2,zb=Math.min(1,Math.max(.12,(z+2.6)/5.2));const f=figure(zb);const x=xL*.85+(i+rnd(i))*((doorX-xL*.85)/np);f.userData.state={x,z,v:.7+rnd(i+2)*.35,s:1+(z-1.8)*.07,seed:rnd(i)*6.3,zb};f.position.z=z;f.scale.setScalar(f.userData.state.s);scene.add(f);people.push(f)}
-  update(0)}
- function update(dt){if(!scene)return;t+=dt;const{halfW,doorX,xL,xR}=B;
-  lines.forEach(({ln,i,z0,n})=>{const a=ln.geometry.attributes.position,arr=a.array;for(let k=0;k<=n;k++){const x=xL+k*(xR-xL)/n;arr[k*3]=x;arr[k*3+1]=.02+Math.sin(x*.9-t*1.4+i*1.7)*.07;arr[k*3+2]=z0+Math.sin(x*.5+i-t*.4)*.12}a.needsUpdate=true});
-  const dp=dots.geometry.attributes.position.array;dotData.forEach((d,i)=>{d.x+=d.v*dt;if(d.x>xR)d.x=xL;dp[i*3]=d.x;dp[i*3+1]=d.y+Math.sin(t*.8+d.ph)*.08;dp[i*3+2]=d.z});dots.geometry.attributes.position.needsUpdate=true;
-  people.forEach(f=>{const u=f.userData,s=u.state;s.x+=s.v*dt;if(s.x>doorX-.05){s.x=xL-1-rnd(t*7+s.seed)*3}
-   f.position.x=s.x;const ph=t*s.v*3.4+s.seed,a=Math.sin(ph)*.5,L=u.limbs;L[0].rotation.x=a;L[1].rotation.x=-a;L[2].rotation.x=-a*1.1;L[3].rotation.x=a*1.1;f.position.y=Math.abs(Math.cos(ph))*.03;
-   const fin=Math.min(1,Math.max(0,(s.x-xL)/4)),fout=Math.min(1,Math.max(0,(doorX-s.x)/1.5));u.body.opacity=(.5+.5*s.zb)*fin*fout;u.shell.opacity=(.18+.8*s.zb)*fin*fout});
-  const cx=Math.sin(t*.12)*.8;cam.position.x=cx;cam.lookAt(cx*.5,1.6,0);
-  flick.forEach((sp,i)=>{const o=.72+.16*Math.sin(t*3+i*2.1)+.06*Math.sin(t*7.3+i);sp.material.opacity=o});if(doorGlow)doorGlow.material.opacity=.85+.08*Math.sin(t*1.7)}
- function frame(now){raf=0;if(dead)return;const dt=Math.min(.05,(now-(last||now))/1000);last=now;update(dt);renderer.render(scene,cam);loop()}
- function loop(){if(!raf&&!dead&&onScreen&&!document.hidden&&scene)raf=requestAnimationFrame(frame)}
- function pause(){if(raf){cancelAnimationFrame(raf);raf=0}last=0}
- const io='IntersectionObserver' in window?new IntersectionObserver(e=>{onScreen=e[0].isIntersecting;onScreen?loop():pause()}):null;
- const onVis=()=>document.hidden?pause():loop();document.addEventListener('visibilitychange',onVis);
- let rt;const onResize=()=>{clearTimeout(rt);rt=setTimeout(()=>{build();if(scene){renderer.render(scene,cam);loop()}},150)};window.addEventListener('resize',onResize);
- c3.addEventListener('webglcontextlost',e=>{e.preventDefault();failed=true;stopApp()});
- function destroy(){dead=true;pause();clearTimeout(rt);io&&io.disconnect();document.removeEventListener('visibilitychange',onVis);window.removeEventListener('resize',onResize);disposeScene();[dotTex,glowTex,sign].forEach(x=>x.dispose());Object.values(geo).forEach(g=>g.dispose());renderer.dispose();try{renderer.forceContextLoss()}catch(e){}}
- return{start(){build();if(!scene)throw new Error('no size');renderer.render(scene,cam);io&&io.observe(c3);loop()},destroy}}
-function stopApp(){if(app){app.destroy();app=null}c3.hidden=true;c2.hidden=false;hero.classList.remove('is3d');window.dispatchEvent(new Event('resize'))}
-async function sync(){
- if(!eligible()||failed||!hasGL()){if(app)stopApp();return}
- if(app||starting)return;starting=true;
- try{const T=await loadThree();if(!eligible()){starting=false;return}
-  hero.classList.add('is3d');c3.hidden=false;
-  await new Promise(r=>requestAnimationFrame(r));
-  const a=create(T);a.start();app=a;c2.hidden=true;
- }catch(e){failed=true;if(app){app.destroy();app=null}c3.hidden=true;c2.hidden=false;hero.classList.remove('is3d')}
- starting=false;window.dispatchEvent(new Event('resize'))}
-let st;window.addEventListener('resize',()=>{clearTimeout(st);st=setTimeout(sync,200)});
-mqRM.addEventListener&&mqRM.addEventListener('change',sync);
+const mqW=matchMedia('(min-width:901px)'),mqP=matchMedia('(pointer:fine)'),mqR=matchMedia('(prefers-reduced-motion: reduce)');
+const stage=g('stage'),room=g('room'),gb=g('gb'),gl=g('gl'),fx=g('fx'),c=fx.getContext('2d'),rw=g('runway');
+const layers=[...room.querySelectorAll('[data-d]')];
+const DISH=[{img:'url(assets/menu/gyoza-pan.jpg)',pos:'38% 52%',n:'NO. 01',name:'招牌鮮肉鍋貼',L:[255,150,200],R:[120,230,255]},{img:'url(assets/menu/gyoza-leek.jpg)',pos:'62% 50%',n:'NO. 02',name:'韭菜鮮肉鍋貼',L:[150,255,190],R:[255,240,200]},{img:'url(assets/menu/gyoza-sichuan.jpg)',pos:'40% 50%',n:'NO. 03',name:'川香辣味鍋貼',L:[255,150,90],R:[255,90,110]}];
+const LAMP_L=[0,246],LAMP_R=[1440,246],CARD_X=[290,720,1150];
+const dust=Array.from({length:110},(_,i)=>({x:rnd(i)*1440,y:40+rnd(i+9)*740,r:.6+rnd(i+3)*1.8,vx:(rnd(i+5)-.5)*8,vy:-(2+rnd(i+7)*7),a:.18+rnd(i+11)*.6,p:rnd(i+13)*6.3}));
+const steam=Array.from({length:16},(_,i)=>({x:480+rnd(i)*480,y:600+rnd(i+4)*80,r:46+rnd(i+8)*60,vy:-(16+rnd(i+2)*16),vx:(rnd(i+6)-.5)*10,t:rnd(i+10)*6}));
+let running=false,raf=0,visible=true,last=0,t0=0,mx=0,my=0,cx=0,cy=0,mpx=-1,mpy=-1,litv=[.22,.22,.22],aim={lx:300,ly:330,rx:1140,ry:330},curDish=-1,flickUntil=0;const cL=[255,150,200],cR=[120,230,255];
+function fit(){const s=Math.min(innerWidth/1440,innerHeight/900);stage.style.transform=`scale(${s})`}
+const onMove=e=>{mx=e.clientX/innerWidth*2-1;my=e.clientY/innerHeight*2-1;mpx=e.clientX;mpy=e.clientY};
+function frame(now){raf=0;if(!running)return;if(!t0)t0=now;const t=(now-t0)/1000,dt=Math.min(.05,(now-(last||now))/1000);last=now;
+ cx+=(mx-cx)*.06;cy+=(my-cy)*.06;room.style.transform=`rotateY(${cx*3}deg) rotateX(${-cy*2}deg)`;layers.forEach(l=>{const d=+l.dataset.d;l.style.translate=`${-cx*d}px ${-cy*d*.6}px`});
+ const H=rw.offsetHeight-innerHeight,p=H>0?clamp((scrollY-rw.offsetTop)/H,0,1):0,pg=sm(p,.08,.36),pe=sm(p,.34,.46);
+ const di=Math.floor(t/5.5)%3,cdi=clamp(pe>.5?Math.floor((p-.46)/.18):di,0,2);
+ if(di!==curDish){curDish=di;flickUntil=t+.7;const D=DISH[di];gb.style.setProperty('--img',D.img);gb.style.setProperty('--pos',D.pos);g('pcap').innerHTML='NOW PROJECTING<b>'+D.n+'</b>'+D.name}
+ const DC=DISH[cdi];for(let k=0;k<3;k++){cL[k]+=(DC.L[k]-cL[k])*.05;cR[k]+=(DC.R[k]-cR[k])*.05}
+ const rgbL=cL.map(Math.round).join(','),rgbR=cR.map(Math.round).join(',');
+ const sA=Math.sin(t*.5)*.5+.5,sB=Math.sin(t*.5+2.3)*.5+.5;
+ let ax1=lerp(260,640,sA),ay1=lerp(300,380,sA),ax2=lerp(1180,800,sB),ay2=lerp(380,300,sB);
+ const idx=clamp(Math.floor((p-.46)/.18),0,2);for(let i=0;i<3;i++){const tg=(pe>.5&&i===idx)?1:(pe>.5?.16:1);litv[i]+=(tg-litv[i])*.08}
+ const cxp=CARD_X[idx];ax1=lerp(ax1,cxp-30,pe);ay1=lerp(ay1,470,pe);ax2=lerp(ax2,cxp+30,pe);ay2=lerp(ay2,470,pe);
+ aim.lx+=(ax1-aim.lx)*.12;aim.ly+=(ay1-aim.ly)*.12;aim.rx+=(ax2-aim.rx)*.12;aim.ry+=(ay2-aim.ry)*.12;
+ const angL=Math.atan2(aim.ly-LAMP_L[1],aim.lx-LAMP_L[0]),angR=Math.atan2(aim.ry-LAMP_R[1],aim.rx-LAMP_R[0]),sy=lerp(1,.42,pe);
+ const bl=g('bl'),br=g('br');bl.style.left=LAMP_L[0]+'px';bl.style.top=LAMP_L[1]+'px';bl.style.transform=`rotate(${angL}rad) scaleY(${sy})`;br.style.left=LAMP_R[0]+'px';br.style.top=LAMP_R[1]+'px';br.style.transform=`rotate(${angR}rad) scaleY(${-sy})`;
+ bl.style.setProperty('--c',rgbL);br.style.setProperty('--c',rgbR);g('ll').style.transform=`rotate(${angL}rad)`;g('lr').style.transform=`rotate(${angR+Math.PI}rad)`;
+ const h1=g('hl'),h2=g('hr');h1.style.left=aim.lx+'px';h1.style.top=aim.ly+'px';h2.style.left=aim.rx+'px';h2.style.top=aim.ry+'px';
+ h1.style.background=`radial-gradient(ellipse,rgba(${rgbL},.28),transparent 70%)`;h2.style.background=`radial-gradient(ellipse,rgba(${rgbR},.28),transparent 70%)`;
+ const pl=g('pl'),pr=g('pr');pl.style.left=aim.lx+'px';pr.style.left=aim.rx+'px';pl.style.background=`radial-gradient(ellipse,rgba(${rgbL},.45),transparent 70%)`;pr.style.background=`radial-gradient(ellipse,rgba(${rgbR},.45),transparent 70%)`;
+ gb.style.transform=`translateY(${-pg*215}px) scale(${1-pg*.5})`;gb.style.opacity=(1-pe*.35)*((flickUntil>t)?(rnd(Math.floor(t*32))>.4?1:.2):1);
+ gl.style.setProperty('--xl',(aim.lx-420)+'px');gl.style.setProperty('--yl',(aim.ly-14)+'px');gl.style.setProperty('--xr',(aim.rx-420)+'px');gl.style.setProperty('--yr',(aim.ry-14)+'px');
+ const sc=Math.min(innerWidth/1440,innerHeight/900),left=(innerWidth-1440*sc)/2,fxm=(mpx-left)/sc,fym=mpy/sc,fl=g('fl'),on=mpx>=0&&pg<.03;
+ gl.style.setProperty('--xm',on?(fxm-420)+'px':'-999px');gl.style.setProperty('--ym',on?(fym-34)+'px':'-999px');fl.style.left=fxm+'px';fl.style.top=fym+'px';fl.style.opacity=on?1:0;
+ g('txt').style.opacity=1-pg*1.3;g('hintx').style.opacity=1-sm(p,0,.08);g('pcap').style.opacity=1-pg*1.5;
+ const tm=g('tomenu'),tv=sm(p,.5,.62);tm.style.opacity=tv;tm.style.visibility=tv>.02?'visible':'hidden';
+ g('exhibits').style.opacity=pe;document.querySelectorAll('.ex').forEach((e,i)=>{const l=litv[i];e.style.filter=`brightness(${.18+.82*l}) saturate(${.4+.6*l})`;e.style.transform=`translateY(${(1-pe)*40}px) scale(${.96+.04*l})`});
+ g('grid').style.backgroundPositionY=(p*900)+'px';
+ c.clearRect(0,0,1440,900);c.globalCompositeOperation='lighter';
+ steam.forEach(s=>{s.y+=s.vy*dt;s.x+=s.vx*dt;s.t+=dt;if(s.y<260){s.y=620+rnd(s.t*3)*60;s.x=480+rnd(s.t)*480}const k=clamp((620-s.y)/360,0,1),a=Math.sin(k*Math.PI)*.07,R=s.r*(1+k*.8),gr=c.createRadialGradient(s.x,s.y,0,s.x,s.y,R);gr.addColorStop(0,`rgba(255,236,210,${a})`);gr.addColorStop(1,'rgba(255,236,210,0)');c.fillStyle=gr;c.beginPath();c.arc(s.x,s.y,R,0,6.3);c.fill()});
+ const near=(x,y,ax,ay,lx,ly)=>{const vx=ax-lx,vy=ay-ly,L=Math.hypot(vx,vy),px=(x-lx)*vx/L+(y-ly)*vy/L,qy=Math.abs((x-lx)*vy/L-(y-ly)*vx/L);return px>0&&px<L*1.5&&qy<40+px*.06?1:0};
+ dust.forEach(d=>{d.x+=d.vx*dt;d.y+=d.vy*dt;if(d.y<20)d.y=800;if(d.x<0)d.x=1440;if(d.x>1440)d.x=0;const b=Math.max(near(d.x,d.y,aim.lx,aim.ly,LAMP_L[0],LAMP_L[1]),near(d.x,d.y,aim.rx,aim.ry,LAMP_R[0],LAMP_R[1])),al=d.a*(.25+.75*b)*(.7+.3*Math.sin(t*1.5+d.p));c.fillStyle=`rgba(255,255,255,${al})`;c.beginPath();c.arc(d.x,d.y,d.r*(1+b*.6),0,6.3);c.fill()});
+ loop()}
+function loop(){if(!raf&&running&&visible&&!document.hidden)raf=requestAnimationFrame(frame)}
+function start(){if(running)return;running=true;root.classList.add('s3d');fit();addEventListener('mousemove',onMove,{passive:true});last=0;loop()}
+function stop(){if(!running&&!root.classList.contains('s3d'))return;running=false;if(raf){cancelAnimationFrame(raf);raf=0}root.classList.remove('s3d');removeEventListener('mousemove',onMove)}
+function sync(){(mqW.matches&&mqP.matches&&!mqR.matches)?start():stop()}
+addEventListener('resize',()=>{sync();if(running)fit()});document.addEventListener('visibilitychange',loop);
+[mqW,mqP,mqR].forEach(m=>m.addEventListener&&m.addEventListener('change',sync));
+if('IntersectionObserver' in window)new IntersectionObserver(e=>{visible=e[0].isIntersecting;loop()}).observe(rw);
 sync();
 })();
-</script><script>
+</script>
+<script>
 // PWA：註冊離線快取（僅 https 或 localhost 有效）
 if('serviceWorker' in navigator&&(location.protocol==='https:'||location.hostname==='localhost'||location.hostname==='127.0.0.1')){window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js').catch(()=>{})})}
 </script>
