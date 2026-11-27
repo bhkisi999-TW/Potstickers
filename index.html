@@ -19,7 +19,7 @@
 <a class="fab" href="https://calendar.app.google/LNf5BRBy9pDfcRtr7" target="_blank" rel="noopener" aria-label="預約（另開新分頁）"><i data-lucide="calendar-days"></i>預約</a>
 <script>
 // 訂單串接：貼上 Google Apps Script「網頁應用程式」網址即啟用；留空則維持「模擬訂單」模式
-const ORDER_API_URL='';
+const ORDER_API_URL='https://script.google.com/macros/s/AKfycbxR7Fhxj7GZsK0oB6qJuj6DeL33I0IFo-gwjZkU2IqCGyFYwmVQ5z3ty6tuYfzEVJrPyw/exec';
 // Product catalogue and client-side state
 const categories=['招牌鍋貼','精選水餃','湯品／飲料','經典小菜'];const photos=['1496116218417-1a781b1c416c','1563245372-f21724e3856d','1547592180-85f173990554','1512621776951-a57141f2eefd'];
 const products=[['p1',0,'招牌鮮肉鍋貼','在地豬肉與清甜高麗菜・10 入',75,'人氣'],['p2',0,'韭菜鮮肉鍋貼','濃郁韭香與鮮肉・10 入',80,'爆汁'],['p3',0,'川香辣味鍋貼','香麻微辣・10 入',85,'微辣'],['p4',1,'高麗菜水餃','鮮甜清爽・10 入',75,'經典'],['p5',1,'鮮蝦水餃','鮮蝦與肉餡・10 入',110,'推薦'],['p6',2,'酸辣湯','酸香開胃',45,'微辣'],['p7',2,'無糖豆漿','清香滑順',30,'無糖'],['p8',3,'涼拌小黃瓜','爽脆開胃',40,'清爽'],['p9',3,'滷豆干','慢滷入味',45,'經典'],['g1',4,'招牌招財鍋貼禮盒','冷凍 50 入',399,'禮盒']].map(([id,cat,name,desc,price,tag])=>({id,cat,name,desc,price,tag}));

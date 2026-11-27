@@ -71,8 +71,10 @@ function setup() {
   // 商品「上架」欄位：勾選框
   products.getRange(2, 4, 500, 1).setDataValidation(SpreadsheetApp.newDataValidation().requireCheckbox().build());
 
-  // 商品主檔：只有在空白時才放入初始商品
-  if (products.getLastRow() < 2) {
+  // 商品主檔：只有在「商品編號」欄完全空白時才放入初始商品
+  // （不能用 getLastRow() 判斷：「上架」欄的空白勾選框也會被算進最後一列）
+  const hasProducts = products.getRange(2, 1, 500, 1).getValues().some(function (r) { return String(r[0]).trim() !== ''; });
+  if (!hasProducts) {
     products.getRange(2, 1, SEED_PRODUCTS.length, 4).setValues(SEED_PRODUCTS);
   }
 
