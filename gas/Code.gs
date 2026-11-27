@@ -83,9 +83,17 @@ function setup() {
     const s = ss.getSheetByName(n);
     if (s && s.getLastRow() === 0 && ss.getSheets().length > 1) ss.deleteSheet(s);
   });
-  [orders, items, products].forEach(function (s, i) { s.autoResizeColumns(1, s.getLastColumn()); });
+  // 固定欄寬（不要用自動調寬：剛建立時只有標題列，會把欄位縮得很窄）
+  setWidths_(orders, [140, 165, 95, 115, 85, 220, 85, 100, 90]);
+  setWidths_(items, [140, 90, 200, 90, 70, 100]);
+  setWidths_(products, [100, 200, 90, 70]);
+  orders.setFrozenColumns(1); // 凍結「訂單編號」欄，左右捲動時仍看得出是哪一筆
   SpreadsheetApp.flush();
   Logger.log('初始化完成：已建立「訂單」「訂單明細」「商品」三個分頁。');
+}
+
+function setWidths_(sheet, widths) {
+  widths.forEach(function (w, i) { sheet.setColumnWidth(i + 1, w); });
 }
 
 function ensureSheet_(ss, name, headers) {
