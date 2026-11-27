@@ -1,6 +1,6 @@
 // 一餃匠心 Service Worker：基本離線支援
 // 修改快取內容時，請更換 VERSION，舊快取會在啟用時自動清除。
-const VERSION = 'yijiao-v1';
+const VERSION = 'yijiao-v2';
 const CORE = [
   './',
   './index.html',
@@ -11,7 +11,12 @@ const CORE = [
   './icons/icon-maskable-512.png',
   './icons/apple-touch-icon.png',
   './icons/favicon-32.png',
-  './icons/favicon-48.png'
+  './icons/favicon-48.png',
+  './assets/menu/gyoza-pan.jpg',
+  './assets/menu/gyoza-boiled.jpg',
+  './assets/menu/soup-soymilk.jpg',
+  './assets/menu/sides.jpg',
+  './assets/menu/gift-box.jpg'
 ];
 // 外部資源（套件、圖片）：先用快取、背景更新
 const EXTERNAL_HOSTS = ['cdn.tailwindcss.com', 'unpkg.com', 'images.unsplash.com'];
