@@ -1,6 +1,6 @@
 // 一煎鍾情 Service Worker：基本離線支援
 // 修改快取內容時，請更換 VERSION，舊快取會在啟用時自動清除。
-const VERSION = 'yijiao-v13';
+const VERSION = 'yijiao-v14';
 const CORE = [
   './',
   './index.html',
