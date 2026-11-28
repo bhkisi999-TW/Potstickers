@@ -292,7 +292,9 @@ function glyphPath(ctx,size){const fs=size*.9;ctx.font=`900 ${fs}px "Noto Sans T
 function buildMask(){const o=document.createElement('canvas');o.width=o.height=GW;const x=o.getContext('2d'),p=glyphPath(x,GW);x.fillStyle='#fff';x.fillText('煎',p.x,p.y);mask=o}
 function drawGlyph(i){const img=imgs[i];g.clearRect(0,0,GW,GW);const p=glyphPath(g,GW);g.fillStyle='#fff';g.fillText('煎',p.x,p.y);
  if(img){g.globalCompositeOperation='source-in';const s=Math.max(GW/img.width,GW/img.height),dw=img.width*s,dh=img.height*s,pos=DISH[i].pos;g.drawImage(img,-(dw-GW)*pos[0],-(dh-GW)*pos[1],dw,dh);g.globalCompositeOperation='source-over'}
- g.lineWidth=Math.max(1.2,GW/420);g.strokeStyle='rgba(255,255,255,.42)';g.strokeText('煎',p.x,p.y);glyphOK=true;rg.clearRect(0,0,GW,GW);rg.drawImage(gc,0,0)}
+ outerOutline(g,p);glyphOK=true;rg.clearRect(0,0,GW,GW);rg.drawImage(gc,0,0)}
+// 乾淨外框：先把字描邊，再把字本體挖掉，只留字外側的線；字型筆畫重疊處的內部輪廓線就不會出現在字裡面
+function outerOutline(g,p){if(!(GW>0)||!gc.width)return;const t=document.createElement('canvas');t.width=t.height=gc.width;const c=t.getContext('2d');glyphPath(c,GW);c.lineJoin='round';c.lineWidth=Math.max(1.6,GW/340)*2;c.strokeStyle='rgba(190,230,255,.8)';c.strokeText('煎',p.x,p.y);c.globalCompositeOperation='destination-out';c.fillStyle='#000';c.fillText('煎',p.x,p.y);g.save();g.shadowColor='rgba(255,255,255,.75)';g.shadowBlur=GW*.03;g.drawImage(t,0,0);g.restore()}
 function layout(){const r=hero.getBoundingClientRect(),b=gbox.getBoundingClientRect();W=Math.round(r.width);H=Math.round(r.height);pc.width=W;pc.height=H;GW=Math.max(100,Math.round(b.width));GX=b.left-r.left;GY=b.top-r.top;gc.width=GW;gc.height=GW;rc.width=GW;rc.height=GW;
  const hy=Math.round(GY+GW*.985);hero.style.setProperty('--hy',hy+'px');const rf=$('refl');rf.style.cssText=`left:${GX}px;top:${hy}px;width:${GW}px;height:${Math.round(GW*.42)}px`;
  const cx=GX+GW/2,cy=GY+GW*.5,ly=GY+GW*.26;geo={cx,cy,ly,hy};
