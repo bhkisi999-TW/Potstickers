@@ -1,5 +1,5 @@
 /**
- * 一餃匠心｜訂單串接 Google 試算表（Google Apps Script）
+ * 一煎鍾情｜訂單串接 Google 試算表（Google Apps Script）
  *
  * 使用方式（詳見 gas/README.md）：
  * 1. 在「新的空白 Google 試算表」開啟：擴充功能 → Apps Script，貼上本檔內容。
